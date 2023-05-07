@@ -1,0 +1,269 @@
+
+--------- Original GoF Patterns ----------
+
+Decorator Pattern
+ConjunctionFileFilter is a Decorator class
+accept is a decorate operation
+f1 of type FileFilter is the Decoratee class
+File Location: Project/CoreNLP/src/edu/stanford/nlp/io/FileFilters.java
+
+Chain of Responsibility Pattern
+Unit is a Chain of Responsibility Handler class
+formatInDefaultUnit is a handle operation
+defaultUnit of type Unit propogates the request
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ie/qe/Unit.java
+
+ Unit
+ FileFilter
+Flyweight Pattern.
+WordCatConstituent is a flyweight factory.
+wordType is a flyweight object (declared public-static-final).
+File location: Project/CoreNLP/src/edu/stanford/nlp/trees/WordCatConstituent.java
+
+Flyweight Pattern.
+DefaultTeXHyphenData is a flyweight factory.
+hyphenData is a flyweight object (declared public-static-final).
+File location: Project/CoreNLP/src/edu/stanford/nlp/ie/pascal/DefaultTeXHyphenData.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+StringLabelFactory is a concrete Factory Method class.
+newLabel is a factory method returns  StringLabel
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/StringLabelFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+StringLabelFactory is a concrete Factory Method class.
+newLabel is a factory method returns  StringLabel
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/StringLabelFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+StringLabelFactory is a concrete Factory Method class.
+newLabelFromString is a factory method returns  StringLabel
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/StringLabelFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+StringLabelFactory is a concrete Factory Method class.
+newLabel is a factory method returns  StringLabel
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/StringLabelFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+WordFactory is a concrete Factory Method class.
+newLabel is a factory method returns  Word
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/WordFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+WordFactory is a concrete Factory Method class.
+newLabel is a factory method returns  Word
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/WordFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+WordFactory is a concrete Factory Method class.
+newLabelFromString is a factory method returns  Word
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/WordFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+WordFactory is a concrete Factory Method class.
+newLabel is a factory method returns  Word
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/WordFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+TaggedWordFactory is a concrete Factory Method class.
+newLabel is a factory method returns  TaggedWord
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/TaggedWordFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+TaggedWordFactory is a concrete Factory Method class.
+newLabel is a factory method returns  TaggedWord
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/TaggedWordFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+TaggedWordFactory is a concrete Factory Method class.
+newLabelFromString is a factory method returns  TaggedWord
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/TaggedWordFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+TaggedWordFactory is a concrete Factory Method class.
+newLabel is a factory method returns  TaggedWord
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/TaggedWordFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+WordTagFactory is a concrete Factory Method class.
+newLabel is a factory method returns  WordTag
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/WordTagFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+WordTagFactory is a concrete Factory Method class.
+newLabel is a factory method returns  WordTag
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/WordTagFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+WordTagFactory is a concrete Factory Method class.
+newLabelFromString is a factory method returns  WordTag
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/WordTagFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+WordTagFactory is a concrete Factory Method class.
+newLabel is a factory method returns  WordTag
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/WordTagFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+CategoryWordTagFactory is a concrete Factory Method class.
+newLabel is a factory method returns  CategoryWordTag
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/CategoryWordTagFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+CategoryWordTagFactory is a concrete Factory Method class.
+newLabel is a factory method returns  CategoryWordTag
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/CategoryWordTagFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+CategoryWordTagFactory is a concrete Factory Method class.
+newLabelFromString is a factory method returns  CategoryWordTag
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/CategoryWordTagFactory.java
+
+Factory Method pattern.
+LabelFactory is a Factory Method class.
+CategoryWordTagFactory is a concrete Factory Method class.
+newLabel is a factory method returns  CategoryWordTag
+ which extends Label
+File Location: Project/CoreNLP/src/edu/stanford/nlp/ling/CategoryWordTagFactory.java
+
+Factory Method pattern.
+ConstituentFactory is a Factory Method class.
+SimpleConstituentFactory is a concrete Factory Method class.
+newConstituent is a factory method returns  SimpleConstituent
+ which extends Constituent
+File Location: Project/CoreNLP/src/edu/stanford/nlp/trees/SimpleConstituentFactory.java
+
+Factory Method pattern.
+ConstituentFactory is a Factory Method class.
+SimpleConstituentFactory is a concrete Factory Method class.
+newConstituent is a factory method returns  SimpleConstituent
+ which extends Constituent
+File Location: Project/CoreNLP/src/edu/stanford/nlp/trees/SimpleConstituentFactory.java
+
+Factory Method pattern.
+ConstituentFactory is a Factory Method class.
+LabeledScoredConstituentFactory is a concrete Factory Method class.
+newConstituent is a factory method returns  LabeledScoredConstituent
+ which extends Constituent
+File Location: Project/CoreNLP/src/edu/stanford/nlp/trees/LabeledScoredConstituentFactory.java
+
+Factory Method pattern.
+ConstituentFactory is a Factory Method class.
+LabeledScoredConstituentFactory is a concrete Factory Method class.
+newConstituent is a factory method returns  LabeledScoredConstituent
+ which extends Constituent
+File Location: Project/CoreNLP/src/edu/stanford/nlp/trees/LabeledScoredConstituentFactory.java
+
+Factory Method pattern.
+TreeReaderFactory is a Factory Method class.
+StringLabeledScoredTreeReaderFactory is a concrete Factory Method class.
+newTreeReader is a factory method returns  PennTreeReader
+ which extends TreeReader
+File Location: Project/CoreNLP/src/edu/stanford/nlp/trees/StringLabeledScoredTreeReaderFactory.java
+
+Factory Method pattern.
+PreferencesFactory is a Factory Method class.
+DisabledPreferencesFactory is a concrete Factory Method class.
+systemRoot is a factory method returns  DisabledPreferences
+ which extends Preferences
+File Location: Project/CoreNLP/src/edu/stanford/nlp/util/DisabledPreferencesFactory.java
+
+Factory Method pattern.
+PreferencesFactory is a Factory Method class.
+DisabledPreferencesFactory is a concrete Factory Method class.
+userRoot is a factory method returns  DisabledPreferences
+ which extends Preferences
+File Location: Project/CoreNLP/src/edu/stanford/nlp/util/DisabledPreferencesFactory.java
+
+find: ‘./pinot’ terminated by signal 11
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+Constants is a flyweight factory.
+conllMentionEvalScript is a flyweight object (declared public-static-final).
+File location: Project/CoreNLP/src/edu/stanford/nlp/dcoref/Constants.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   1
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 66
+Number of files processed: 920
+Size of DelegationTable: 181
+Size of concrete class nodes: 46
+Size of undirected invocation edges: 4
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/1
+nFlyweightGoFVersion = 0
