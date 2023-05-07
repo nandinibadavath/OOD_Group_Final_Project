@@ -1,0 +1,268 @@
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 0
+Number of files processed: 671
+Size of DelegationTable: 0
+Size of concrete class nodes: 0
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+
+--------- Original GoF Patterns ----------
+
+
+
+Template Method Found.
+UnmarshallingAssertion is the template class
+assertMatches is the template method
+doAssert is a primitive method
+File Location: Final Project 1/aws-sdk-java-v2/test/protocol-tests-core/src/main/java/software/amazon/awssdk/protocol/asserts/unmarshalling/UnmarshallingAssertion.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             1
+Visitor                     0
+------------------------------
+
+Number of classes processed: 11
+Number of files processed: 762
+Size of DelegationTable: 1
+Size of concrete class nodes: 8
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+TestConstants is a flyweight factory.
+TOKEN_RESOURCE_PATH is a flyweight object (declared public-static-final).
+File location: Final Project 1/aws-sdk-java-v2/core/imds/src/test/java/software/amazon/awssdk/imds/TestConstants.java
+
+Flyweight Pattern.
+RetryPolicyContexts is a flyweight factory.
+EMPTY is a flyweight object (declared public-static-final).
+File location: Final Project 1/aws-sdk-java-v2/core/sdk-core/src/test/java/software/amazon/awssdk/core/retry/RetryPolicyContexts.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   2
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 2
+Number of files processed: 799
+Size of DelegationTable: 9
+Size of concrete class nodes: 2
+Size of undirected invocation edges: 2
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/2
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 49
+Number of files processed: 799
+Size of DelegationTable: 52
+Size of concrete class nodes: 45
+Size of undirected invocation edges: 5
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+SnsTestResources is a flyweight factory.
+PACKAGE_ROOT is a flyweight object (declared public-static-final).
+File location: Final Project 1/aws-sdk-java-v2/services/sns/src/test/java/software/amazon/awssdk/services/sns/SnsTestResources.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   1
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 1
+Number of files processed: 511
+Size of DelegationTable: 0
+Size of concrete class nodes: 1
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/1
+nFlyweightGoFVersion = 0

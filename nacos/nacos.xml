@@ -1,0 +1,194 @@
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+Constants is a flyweight factory.
+CLIENT_VERSION_HEADER is a flyweight object (declared public-static-final).
+File location: Project/nacos/config/src/main/java/com/alibaba/nacos/config/server/constant/Constants.java
+
+Flyweight Pattern.
+StringUtils is a flyweight factory.
+EMPTY is a flyweight object (declared public-static-final).
+File location: Project/nacos/api/src/main/java/com/alibaba/nacos/api/utils/StringUtils.java
+
+Flyweight Pattern.
+PropertiesConstant is a flyweight factory.
+NOTIFY_CONNECT_TIMEOUT is a flyweight object (declared public-static-final).
+File location: Project/nacos/config/src/main/java/com/alibaba/nacos/config/server/constant/PropertiesConstant.java
+
+Flyweight Pattern.
+DateFormatUtils is a flyweight factory.
+YYYYMMDD is a flyweight object (declared public-static-final).
+File location: Project/nacos/common/src/main/java/com/alibaba/nacos/common/utils/DateFormatUtils.java
+
+Flyweight Pattern.
+RequestUrlConstants is a flyweight factory.
+HTTP_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/nacos/common/src/main/java/com/alibaba/nacos/common/constant/RequestUrlConstants.java
+
+Flyweight Pattern.
+HttpHeaderConsts is a flyweight factory.
+CLIENT_VERSION_HEADER is a flyweight object (declared public-static-final).
+File location: Project/nacos/common/src/main/java/com/alibaba/nacos/common/constant/HttpHeaderConsts.java
+
+Flyweight Pattern.
+HttpMethod is a flyweight factory.
+GET is a flyweight object (declared public-static-final).
+File location: Project/nacos/common/src/main/java/com/alibaba/nacos/common/utils/HttpMethod.java
+
+Flyweight Pattern.
+DerbyLoadEvent is a flyweight factory.
+INSTANCE is a flyweight object (declared public-static-final).
+File location: Project/nacos/config/src/main/java/com/alibaba/nacos/config/server/model/event/DerbyLoadEvent.java
+
+Flyweight Pattern.
+MetadataKey is a flyweight factory.
+LEADER_META_DATA is a flyweight object (declared public-static-final).
+File location: Project/nacos/consistency/src/main/java/com/alibaba/nacos/consistency/cp/MetadataKey.java
+
+Flyweight Pattern.
+StatConstants is a flyweight factory.
+APP_NAME is a flyweight object (declared public-static-final).
+File location: Project/nacos/config/src/main/java/com/alibaba/nacos/config/server/utils/StatConstants.java
+
+Flyweight Pattern.
+ApiConstants is a flyweight factory.
+PROMETHEUS_CONTROLLER_PATH is a flyweight object (declared public-static-final).
+File location: Project/nacos/prometheus/src/main/java/com/alibaba/nacos/prometheus/api/ApiConstants.java
+
+Flyweight Pattern.
+PropertyKeyConst is a flyweight factory.
+IS_USE_CLOUD_NAMESPACE_PARSING is a flyweight object (declared public-static-final).
+File location: Project/nacos/api/src/main/java/com/alibaba/nacos/api/PropertyKeyConst.java
+
+Flyweight Pattern.
+SystemEnv is a flyweight factory.
+ALIBABA_ALIWARE_ENDPOINT_PORT is a flyweight object (declared public-static-final).
+File location: Project/nacos/api/src/main/java/com/alibaba/nacos/api/PropertyKeyConst.java
+
+Flyweight Pattern.
+PreservedMetadataKeys is a flyweight factory.
+REGISTER_SOURCE is a flyweight object (declared public-static-final).
+File location: Project/nacos/api/src/main/java/com/alibaba/nacos/api/naming/PreservedMetadataKeys.java
+
+Flyweight Pattern.
+UtilsAndCommons is a flyweight factory.
+NACOS_CMDB_CONTEXT is a flyweight object (declared public-static-final).
+File location: Project/nacos/cmdb/src/main/java/com/alibaba/nacos/cmdb/utils/UtilsAndCommons.java
+
+Flyweight Pattern.
+NamingRemoteConstants is a flyweight factory.
+REGISTER_INSTANCE is a flyweight object (declared public-static-final).
+File location: Project/nacos/api/src/main/java/com/alibaba/nacos/api/naming/remote/NamingRemoteConstants.java
+
+Flyweight Pattern.
+RemoteConstants is a flyweight factory.
+LABEL_SOURCE is a flyweight object (declared public-static-final).
+File location: Project/nacos/api/src/main/java/com/alibaba/nacos/api/remote/RemoteConstants.java
+
+Flyweight Pattern.
+SystemPropertyKeyConst is a flyweight factory.
+NAMING_SERVER_PORT is a flyweight object (declared public-static-final).
+File location: Project/nacos/api/src/main/java/com/alibaba/nacos/api/SystemPropertyKeyConst.java
+
+Flyweight Pattern.
+CommonParams is a flyweight factory.
+CODE is a flyweight object (declared public-static-final).
+File location: Project/nacos/api/src/main/java/com/alibaba/nacos/api/naming/CommonParams.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                  19
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 118
+Number of files processed: 1014
+Size of DelegationTable: 80
+Size of concrete class nodes: 88
+Size of undirected invocation edges: 9
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/19
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+find: ‘./pinot’ terminated by signal 11
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 0
+Number of files processed: 1
+Size of DelegationTable: 0
+Size of concrete class nodes: 0
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0

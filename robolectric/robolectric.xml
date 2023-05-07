@@ -1,0 +1,4 @@
+pinot: decl.cpp:2352: void Semantic::AddDefaultConstructor(TypeSymbol*): Assertion `! type -> ACC_INTERFACE()' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: ast.h:6687: void AstAnnotation::AllocateMemberValuePairs(unsigned int): Assertion `! member_value_pairs' failed.
+find: ‘./pinot’ terminated by signal 6

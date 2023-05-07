@@ -1,0 +1,4470 @@
+
+--------- Original GoF Patterns ----------
+
+Chain of Responsibility Pattern
+DelegateAction is a Chain of Responsibility Handler class
+actionPerformed is a handle operation
+listener of type ActionListener propogates the request
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/com/sun/java/swing/action/DelegateAction.java
+
+Chain of Responsibility Pattern
+StateChangeAction is a Chain of Responsibility Handler class
+itemStateChanged is a handle operation
+listener of type ItemListener propogates the request
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/com/sun/java/swing/action/StateChangeAction.java
+
+Decorator Pattern
+ConstIterator is a Decorator class
+hasNext is a decorate operation
+iter of type Iterator is the Decoratee class
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/utilities/ConstIterator.java
+
+Decorator Pattern
+ConstIterator is a Decorator class
+next is a decorate operation
+iter of type Iterator is the Decoratee class
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/utilities/ConstIterator.java
+
+ ActionListener ItemListener
+ Iterator
+Strategy Pattern.
+ZPageTableEntry is the Context class.
+Address is the Strategy interface.
+Concrete Strategy classes:  OopHandle BsdAddress LinuxAddress RemoteAddress WindbgAddress DummyAddress
+Delegation through entry of type Address
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/z/ZPageTableEntry.java,
+               Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/debugger/Address.java
+
+Strategy Pattern.
+WorkerThread is the Context class.
+MessageQueue is the Strategy interface.
+Concrete Strategy classes:  MessageQueueImpl
+Delegation through mq of type MessageQueue
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/utilities/WorkerThread.java,
+               Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/utilities/MessageQueue.java
+
+Strategy Pattern.
+MainLoop is the Context class.
+MessageQueue is the Strategy interface.
+Concrete Strategy classes:  MessageQueueImpl
+Delegation through myMq of type MessageQueue
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/utilities/WorkerThread.java,
+               Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/utilities/MessageQueue.java
+
+Strategy Pattern.
+MonitorValue is the Context class.
+ScopeValue is the Strategy interface.
+Concrete Strategy classes:  ObjectValue LocationValue ConstantIntValue ConstantOopReadValue ConstantLongValue ConstantDoubleValue
+Delegation through owner of type ScopeValue
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/MonitorValue.java,
+               Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/code/ScopeValue.java
+
+Strategy Pattern.
+TreeTableModelAdapter is the Context class.
+TreeTableModel is the Strategy interface.
+Concrete Strategy classes:  SimpleTreeTableModel AbstractTreeTableModel
+Delegation through treeTableModel of type TreeTableModel
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/ui/treetable/TreeTableModelAdapter.java,
+               Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/ui/treetable/TreeTableModel.java
+
+Strategy Pattern.
+SortHeaderMouseAdapter is the Context class.
+SortableTableModel is the Strategy interface.
+Concrete Strategy classes:  ObjectHistogramTableModel ObjectListTableModel
+Delegation through model of type SortableTableModel
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/ui/table/SortHeaderMouseAdapter.java,
+               Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/ui/table/SortableTableModel.java
+
+Strategy Pattern.
+ZForwardingTableEntry is the Context class.
+Address is the Strategy interface.
+Concrete Strategy classes:  OopHandle BsdAddress LinuxAddress RemoteAddress WindbgAddress DummyAddress
+Delegation through entry of type Address
+File Location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/z/ZForwardingTableEntry.java,
+               Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/debugger/Address.java
+
+Flyweight Pattern.
+JavaThreadState is a flyweight factory.
+UNINITIALIZED is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/runtime/JavaThreadState.java
+
+Flyweight Pattern.
+ThreadState is a flyweight factory.
+ALLOCATED is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/runtime/ThreadState.java
+
+Flyweight Pattern.
+CollectedHeapName is a flyweight factory.
+SERIAL is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/gc/shared/CollectedHeapName.java
+
+Flyweight Pattern.
+ActionUtilities is a flyweight factory.
+IMAGE_DIR is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.hotspot.agent/share/classes/com/sun/java/swing/action/ActionUtilities.java
+
+Flyweight Pattern.
+CompoundTypeKind is a flyweight factory.
+CLASS is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/debugger/cdbg/basic/CompoundTypeKind.java
+
+Flyweight Pattern.
+ELFSectionHeader is a flyweight factory.
+STRING_TABLE_NAME is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/debugger/posix/elf/ELFSectionHeader.java
+
+Flyweight Pattern.
+RBColor is a flyweight factory.
+RED is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.hotspot.agent/share/classes/sun/jvm/hotspot/utilities/RBColor.java
+
+find: ‘./pinot’ terminated by signal 11
+find: ‘./pinot’ terminated by signal 11
+
+--------- Original GoF Patterns ----------
+
+Chain of Responsibility Pattern
+RecursiveChildIterator is a Chain of Responsibility Handler class
+next is a handle operation
+subiterator of type Iterator propogates the request
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Chain of Responsibility Pattern
+XMLSignatureException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+cause of type Throwable propogates the request
+File Location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/XMLSignatureException.java
+
+Chain of Responsibility Pattern
+XMLSignatureException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+cause of type Throwable propogates the request
+File Location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/XMLSignatureException.java
+
+Chain of Responsibility Pattern
+XMLSignatureException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+cause of type Throwable propogates the request
+File Location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/XMLSignatureException.java
+
+Chain of Responsibility Pattern
+TransformException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+cause of type Throwable propogates the request
+File Location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/TransformException.java
+
+Chain of Responsibility Pattern
+TransformException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+cause of type Throwable propogates the request
+File Location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/TransformException.java
+
+Chain of Responsibility Pattern
+TransformException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+cause of type Throwable propogates the request
+File Location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/TransformException.java
+
+Decorator Pattern
+Enumerator is a Decorator class
+hasMoreElements is a decorate operation
+raw of type Enumeration is the Decoratee class
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+Decorator Pattern
+Enumerator is a Decorator class
+hasMoreElements is a decorate operation
+raw of type Enumeration is the Decoratee class
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+ Iterator Throwable
+ Enumeration
+Bridge Pattern.
+Node is abstract.
+Visitor is an interface.
+Node delegates Visitor.
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Node.java,
+               Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Node.java
+
+Strategy Pattern.
+Result is the Context class.
+Test is the Strategy interface.
+Concrete Strategy classes:  GraphicsTests TextTests CMMTests IIOTests PixelTests TextRenderTests DrawStrings DrawChars DrawBytes DrawGlyphVectors DrawTextLayouts TextMeasureTests StringWidth StringBounds CharsWidth CharsBounds FontCanDisplay GVMeasureTest GVWidth GVLogicalBounds GVVisualBounds GVPixelBounds GVOutline GVGlyphLogicalBounds GVGlyphVisualBounds GVGlyphPixelBounds GVGlyphOutline GVGlyphTransform GVGlyphMetrics TLMeasureTest TLAdvance TLAscent TLBounds TLExtendedMeasureTest TLGetCaretInfo TLGetNextHit TLGetCaretShape TLGetLogicalHighlightShape TLGetVisualHighlightShape TLHitTest TLOutline TextConstructionTests GVFromFontString GVFromFontChars GVFromFontCI GVFromFontGlyphs GVFromFontLayout TLFromFont TLFromMap TLFromACI TLClone TLJustify TLFromLBM BufImgTest GetRGB SetRGB RasTest GetDataElements SetDataElements GetPixel SetPixel DataBufTest GetElem SetElem MiscTests CopyArea ColorConversionTests ProfileTests ReadHeaderTest GetNumComponentsTest InputTests OutputTests DataConversionTests FromRGBTest FromCIEXYZTest ToCIEXYZTest ToRGBTest ColorConvertOpTests ConvertImageTest ConvertRasterTest DrawImageTest EmbeddedProfileTests ReadImageTest InputImageTests ToolkitCreateImage ImageIORead ImageReaderRead ImageReaderGetImageMetadata InputStreamTests IISConstruct IISRead IISReadByteArray IISReadFullyByteArray IISReadBit IISReadByte IISReadUnsignedByte IISReadShort IISReadUnsignedShort IISReadInt IISReadUnsignedInt IISReadFloat IISReadLong IISReadDouble IISSkipBytes OutputImageTests ImageIOWrite ImageWriterWrite OutputStreamTests IOSConstruct IOSWrite IOSWriteByteArray IOSWriteBit IOSWriteByte IOSWriteShort IOSWriteInt IOSWriteFloat IOSWriteLong IOSWriteDouble
+Delegation through test of type Test
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Result.java,
+               Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Test.java
+
+Strategy Pattern.
+DependentLink is the Context class.
+Modifier is the Strategy interface.
+Concrete Strategy classes:  Option EnableSet Toggle Enable Int ObjectList IntList ObjectChoice Test GraphicsTests TextRenderTests DrawStrings DrawChars DrawBytes DrawGlyphVectors DrawTextLayouts TextMeasureTests StringWidth StringBounds CharsWidth CharsBounds FontCanDisplay GVMeasureTest GVWidth GVLogicalBounds GVVisualBounds GVPixelBounds GVOutline GVGlyphLogicalBounds GVGlyphVisualBounds GVGlyphPixelBounds GVGlyphOutline GVGlyphTransform GVGlyphMetrics TLMeasureTest TLAdvance TLAscent TLBounds TLExtendedMeasureTest TLGetCaretInfo TLGetNextHit TLGetCaretShape TLGetLogicalHighlightShape TLGetVisualHighlightShape TLHitTest TLOutline TextConstructionTests GVFromFontString GVFromFontChars GVFromFontCI GVFromFontGlyphs GVFromFontLayout TLFromFont TLFromMap TLFromACI TLClone TLJustify TLFromLBM CMMTests IIOTests PixelTests BufImg BufImgTest GetRGB SetRGB RasTest GetDataElements SetDataElements GetPixel SetPixel DataBufTest GetElem SetElem MiscTests CopyArea ColorConversionTests ProfileTests ReadHeaderTest GetNumComponentsTest InputTests InputType OutputTests OutputType DataConversionTests FromRGBTest FromCIEXYZTest ToCIEXYZTest ToRGBTest ColorConvertOpTests ConvertImageTest ConvertRasterTest DrawImageTest EmbeddedProfileTests ReadImageTest InputImageTests ToolkitCreateImage ImageIORead ImageReaderRead ImageReaderGetImageMetadata InputStreamTests IISConstruct IISRead IISReadByteArray IISReadFullyByteArray IISReadBit IISReadByte IISReadUnsignedByte IISReadShort IISReadUnsignedShort IISReadInt IISReadUnsignedInt IISReadFloat IISReadLong IISReadDouble IISSkipBytes OutputImageTests ImageIOWrite ImageWriterWrite OutputStreamTests IOSConstruct IOSWrite IOSWriteByteArray IOSWriteBit IOSWriteByte IOSWriteShort IOSWriteInt IOSWriteFloat IOSWriteLong IOSWriteDouble
+Delegation through mod of type Modifier
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Test.java,
+               Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Modifier.java
+
+Strategy Pattern.
+DependentLink is the Context class.
+Filter is the Strategy interface.
+Concrete Strategy classes:  ImageTests$DrawImageBg$1 ImageTests$ImageOpTests$1 InputImageTests$ToolkitCreateImage$2 InputImageTests$ImageIORead$1 OutputImageTests$ImageIOWrite$1
+Delegation through filter of type Filter
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Test.java,
+               Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Modifier.java
+
+Strategy Pattern.
+XSLTTransformParameterSpec is the Context class.
+XMLStructure is the Strategy interface.
+Concrete Strategy classes:  RetrievalMethod DOMStructure DOMStructure Transform XMLSignature SignatureValue Manifest KeyInfo SignatureProperties SignatureProperty XMLObject SignatureMethod DigestMethod Reference SignedInfo X509IssuerSerial X509Data PGPData KeyValue KeyName CanonicalizationMethod DOMEnvelopedTransform
+Delegation through stylesheet of type XMLStructure
+File Location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.java,
+               Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/XMLStructure.java
+
+Strategy Pattern.
+ResultHolder is the Context class.
+ResultSetHolder is the Strategy interface.
+Concrete Strategy classes:  GroupResultSetHolder SingleResultSetHolder
+Delegation through rsh of type ResultSetHolder
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java,
+               Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+Flyweight Pattern.
+JFCModelException is immutable.
+File location: Project/loom/src/jdk.jfr/share/classes/jdk/jfr/internal/jfc/model/JFCModelException.java
+
+Flyweight Pattern.
+Identity is a flyweight factory.
+instance is a flyweight object (declared public-static-final).
+File location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/GraphicsTests.java
+
+Flyweight Pattern.
+FTranslate is a flyweight factory.
+instance is a flyweight object (declared public-static-final).
+File location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/GraphicsTests.java
+
+Flyweight Pattern.
+Scale2x2 is a flyweight factory.
+instance is a flyweight object (declared public-static-final).
+File location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/GraphicsTests.java
+
+Flyweight Pattern.
+Rotate15 is a flyweight factory.
+instance is a flyweight object (declared public-static-final).
+File location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/GraphicsTests.java
+
+Flyweight Pattern.
+ShearX is a flyweight factory.
+instance is a flyweight object (declared public-static-final).
+File location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/GraphicsTests.java
+
+Flyweight Pattern.
+ShearY is a flyweight factory.
+instance is a flyweight object (declared public-static-final).
+File location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/GraphicsTests.java
+
+Flyweight Pattern.
+Transform is a flyweight factory.
+BASE64 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/Transform.java
+
+Flyweight Pattern.
+Purpose is a flyweight factory.
+SIGN is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/KeySelector.java
+
+Flyweight Pattern.
+SignatureMethod is a flyweight factory.
+DSA_SHA1 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/SignatureMethod.java
+
+Flyweight Pattern.
+CanonicalizationMethod is a flyweight factory.
+INCLUSIVE is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/CanonicalizationMethod.java
+
+Flyweight Pattern.
+DigestMethod is a flyweight factory.
+SHA1 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/DigestMethod.java
+
+Flyweight Pattern.
+KeyValue is a flyweight factory.
+DSA_TYPE is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/keyinfo/KeyValue.java
+
+Flyweight Pattern.
+InvalidInstalledCodeException is immutable.
+File location: Project/loom/src/jdk.internal.vm.ci/share/classes/jdk/vm/ci/code/InvalidInstalledCodeException.java
+
+Flyweight Pattern.
+ScriptEngine is a flyweight factory.
+ARGV is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.scripting/share/classes/javax/script/ScriptEngine.java
+
+Flyweight Pattern.
+XSLTTransformParameterSpec is immutable.
+File location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.java
+
+Flyweight Pattern.
+HMACParameterSpec is immutable.
+File location: Project/loom/src/java.xml.crypto/share/classes/javax/xml/crypto/dsig/spec/HMACParameterSpec.java
+
+Composite pattern.
+ObjectList is the composite class.
+optionvalues is the composite instance.
+Object is the component class.
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+File Location: rt.jar/java/lang(Object.class)
+
+Composite pattern.
+ObjectChoice is the composite class.
+optionvalues is the composite instance.
+Object is the component class.
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+File Location: rt.jar/java/lang(Object.class)
+
+Composite pattern.
+SwitchIterator is the composite class.
+list is the composite instance.
+Object is the component class.
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+File Location: rt.jar/java/lang(Object.class)
+
+Composite pattern.
+GroupResultSetHolder is the composite class.
+members is the composite instance.
+ResultSetHolder is the component class.
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+Factory Method pattern.
+Modifier is a Factory Method class.
+Toggle is a concrete Factory Method class.
+getIterator is a factory method returns  BooleanIterator
+ which extends Iterator
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Node is a Factory Method class.
+Toggle is a concrete Factory Method class.
+getJComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Modifier is a Factory Method class.
+Enable is a concrete Factory Method class.
+getIterator is a factory method returns  BooleanIterator
+ which extends Iterator
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Node is a Factory Method class.
+Enable is a concrete Factory Method class.
+getJComponent is a factory method returns  JCheckBox
+ which extends JComponent
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Modifier is a Factory Method class.
+Int is a concrete Factory Method class.
+getIterator is a factory method returns  SwitchIterator
+ which extends Iterator
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Node is a Factory Method class.
+Int is a concrete Factory Method class.
+getJComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Modifier is a Factory Method class.
+ObjectList is a concrete Factory Method class.
+getIterator is a factory method returns  SwitchIterator
+ which extends Iterator
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Node is a Factory Method class.
+ObjectList is a concrete Factory Method class.
+getJComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Modifier is a Factory Method class.
+ObjectChoice is a concrete Factory Method class.
+getIterator is a factory method returns  SwitchIterator
+ which extends Iterator
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Node is a Factory Method class.
+ObjectChoice is a concrete Factory Method class.
+getJComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Factory Method pattern.
+Modifier is a Factory Method class.
+EnableSet is a concrete Factory Method class.
+getIterator is a factory method returns  EnableIterator
+ which extends Iterator
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Factory Method pattern.
+TextTests is a Factory Method class.
+DrawGlyphVectors is a concrete Factory Method class.
+createContext is a factory method returns  GVContext
+ which extends Context
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextRenderTests.java
+
+Factory Method pattern.
+TextTests is a Factory Method class.
+DrawTextLayouts is a concrete Factory Method class.
+createContext is a factory method returns  TLContext
+ which extends Context
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextRenderTests.java
+
+Factory Method pattern.
+TextConstructionTests is a Factory Method class.
+TLFromMap is a concrete Factory Method class.
+createContext is a factory method returns  TLMapContext
+ which extends Context
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextConstructionTests.java
+
+Factory Method pattern.
+CMMTests is a Factory Method class.
+ProfileTests is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/ProfileTests.java
+
+Factory Method pattern.
+CMMTests is a Factory Method class.
+DataConversionTests is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/DataConversionTests.java
+
+Factory Method pattern.
+CMMTests is a Factory Method class.
+ColorConvertOpTests is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/ColorConvertOpTests.java
+
+Factory Method pattern.
+CMMTests is a Factory Method class.
+EmbeddedProfileTests is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/EmbeddedProfileTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+ToolkitCreateImage is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+ImageIORead is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+ImageReaderRead is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+ImageReaderGetImageMetadata is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISConstruct is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISRead is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadByteArray is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadFullyByteArray is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadBit is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadByte is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadUnsignedByte is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadShort is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadUnsignedShort is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadInt is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadUnsignedInt is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadFloat is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadLong is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISReadDouble is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IISSkipBytes is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+ImageIOWrite is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputImageTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+ImageWriterWrite is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputImageTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSConstruct is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWrite is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWriteByteArray is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWriteBit is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWriteByte is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWriteShort is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWriteInt is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWriteFloat is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWriteLong is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+Test is a Factory Method class.
+IOSWriteDouble is a concrete Factory Method class.
+initTest is a factory method returns  Context
+ which extends Object
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Factory Method pattern.
+XPathFactory is a Factory Method class.
+XalanXPathFactory is a concrete Factory Method class.
+newXPathAPI is a factory method returns  XalanXPathAPI
+ which extends XPathAPI
+File Location: Project/loom/src/java.xml.crypto/share/classes/com/sun/org/apache/xml/internal/security/utils/XalanXPathFactory.java
+
+Factory Method pattern.
+XPathFactory is a Factory Method class.
+JDKXPathFactory is a concrete Factory Method class.
+newXPathAPI is a factory method returns  JDKXPathAPI
+ which extends XPathAPI
+File Location: Project/loom/src/java.xml.crypto/share/classes/com/sun/org/apache/xml/internal/security/utils/JDKXPathFactory.java
+
+Factory Method pattern.
+ResultSetHolder is a Factory Method class.
+GroupResultSetHolder is a concrete Factory Method class.
+getResultEnumeration is a factory method returns  Enumerator
+ which extends Enumeration
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+Factory Method pattern.
+ResultSetHolder is a Factory Method class.
+SingleResultSetHolder is a concrete Factory Method class.
+getKeyEnumeration is a factory method returns  Enumerator
+ which extends Enumeration
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+Visitor pattern found.
+Visitor is an abstract Visitor class.
+Node is a Vistee class.
+traverse is the accept method.
+visit is the visit method.
+THIS pointer is exposed to visitor Visitor
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Node.java
+
+Visitor pattern found.
+Node is an abstract Visitor class.
+Group$2 is a Vistee class.
+Visitor is an abstract Visitee class.
+ TestEnvironment Group$1 Group$2 J2DBench$1
+visit is the accept method.
+write is the visit method.
+val$pw is exposed to visitor Node
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Mediator Pattern.
+Result is the mediator class.
+test controls a list of colleagues of type Test.
+setModifiers invokes the mediator. 
+Subtype(s) of colleague(s):  GraphicsTests TextTests CMMTests IIOTests PixelTests TextRenderTests DrawStrings DrawChars DrawBytes DrawGlyphVectors DrawTextLayouts TextMeasureTests StringWidth StringBounds CharsWidth CharsBounds FontCanDisplay GVMeasureTest GVWidth GVLogicalBounds GVVisualBounds GVPixelBounds GVOutline GVGlyphLogicalBounds GVGlyphVisualBounds GVGlyphPixelBounds GVGlyphOutline GVGlyphTransform GVGlyphMetrics TLMeasureTest TLAdvance TLAscent TLBounds TLExtendedMeasureTest TLGetCaretInfo TLGetNextHit TLGetCaretShape TLGetLogicalHighlightShape TLGetVisualHighlightShape TLHitTest TLOutline TextConstructionTests GVFromFontString GVFromFontChars GVFromFontCI GVFromFontGlyphs GVFromFontLayout TLFromFont TLFromMap TLFromACI TLClone TLJustify TLFromLBM BufImgTest GetRGB SetRGB RasTest GetDataElements SetDataElements GetPixel SetPixel DataBufTest GetElem SetElem MiscTests CopyArea ColorConversionTests ProfileTests ReadHeaderTest GetNumComponentsTest InputTests OutputTests DataConversionTests FromRGBTest FromCIEXYZTest ToCIEXYZTest ToRGBTest ColorConvertOpTests ConvertImageTest ConvertRasterTest DrawImageTest EmbeddedProfileTests ReadImageTest InputImageTests ToolkitCreateImage ImageIORead ImageReaderRead ImageReaderGetImageMetadata InputStreamTests IISConstruct IISRead IISReadByteArray IISReadFullyByteArray IISReadBit IISReadByte IISReadUnsignedByte IISReadShort IISReadUnsignedShort IISReadInt IISReadUnsignedInt IISReadFloat IISReadLong IISReadDouble IISSkipBytes OutputImageTests ImageIOWrite ImageWriterWrite OutputStreamTests IOSConstruct IOSWrite IOSWriteByteArray IOSWriteBit IOSWriteByte IOSWriteShort IOSWriteInt IOSWriteFloat IOSWriteLong IOSWriteDouble
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Result.java
+
+Mediator Pattern.
+Node is the mediator class.
+parent controls a list of colleagues of type Group.
+getNext invokes the mediator. 
+Subtype(s) of colleague(s):  EnableSet TriStateImageType
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Node.java
+
+Mediator Pattern.
+Group is the mediator class.
+children controls a list of colleagues of type Node.
+addChild invokes the mediator. 
+Subtype(s) of colleague(s):  Option Group TextAAOpt RandomColorOpt Toggle Enable Int ObjectList IntList ObjectChoice EnableSet Test GraphicsTests TextRenderTests DrawStrings DrawChars DrawBytes DrawGlyphVectors DrawTextLayouts TextMeasureTests StringWidth StringBounds CharsWidth CharsBounds FontCanDisplay GVMeasureTest GVWidth GVLogicalBounds GVVisualBounds GVPixelBounds GVOutline GVGlyphLogicalBounds GVGlyphVisualBounds GVGlyphPixelBounds GVGlyphOutline GVGlyphTransform GVGlyphMetrics TLMeasureTest TLAdvance TLAscent TLBounds TLExtendedMeasureTest TLGetCaretInfo TLGetNextHit TLGetCaretShape TLGetLogicalHighlightShape TLGetVisualHighlightShape TLHitTest TLOutline TextConstructionTests GVFromFontString GVFromFontChars GVFromFontCI GVFromFontGlyphs GVFromFontLayout TLFromFont TLFromMap TLFromACI TLClone TLJustify TLFromLBM CMMTests IIOTests PixelTests BufImg BufImgTest GetRGB SetRGB RasTest GetDataElements SetDataElements GetPixel SetPixel DataBufTest GetElem SetElem MiscTests CopyArea ColorConversionTests ProfileTests ReadHeaderTest GetNumComponentsTest InputTests InputType OutputTests OutputType DataConversionTests FromRGBTest FromCIEXYZTest ToCIEXYZTest ToRGBTest ColorConvertOpTests ConvertImageTest ConvertRasterTest DrawImageTest EmbeddedProfileTests ReadImageTest InputImageTests ToolkitCreateImage ImageIORead ImageReaderRead ImageReaderGetImageMetadata InputStreamTests IISConstruct IISRead IISReadByteArray IISReadFullyByteArray IISReadBit IISReadByte IISReadUnsignedByte IISReadShort IISReadUnsignedShort IISReadInt IISReadUnsignedInt IISReadFloat IISReadLong IISReadDouble IISSkipBytes OutputImageTests ImageIOWrite ImageWriterWrite OutputStreamTests IOSConstruct IOSWrite IOSWriteByteArray IOSWriteBit IOSWriteByte IOSWriteShort IOSWriteInt IOSWriteFloat IOSWriteLong IOSWriteDouble
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Observer Pattern.
+Group is an observer iterator.
+Node is the generic type for the listeners.
+traverse is the notify method.
+traverse is the update method.
+Subject class(es): Group J2DBench
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Mediator Pattern.
+Test is the mediator class.
+dependencies controls a list of colleagues of type DependentLink.
+runOneTest invokes the mediator. 
+Subtype(s) of colleague(s): 
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Test.java
+
+Observer Pattern.
+DependentLink is an observer iterator.
+Modifier is the generic type for the listeners.
+recurseAndRun is the notify method.
+modifyTest is the update method.
+Subject class(es): Test DependentLink
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Test.java
+
+Observer Pattern.
+DependentLink is an observer iterator.
+Modifier is the generic type for the listeners.
+recurseAndRun is the notify method.
+restoreTest is the update method.
+Subject class(es): Test DependentLink
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Test.java
+
+Mediator Pattern.
+Mediator: Result
+Colleagues:  J2DBench ObjectChoice Test Modifier Option Toggle ObjectList InputType OutputType ResultSet Enable Node BufImg
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Result.java
+
+Mediator Pattern.
+Mediator: Node
+Colleagues:  Group Visitor
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Node.java
+
+Mediator Pattern.
+Mediator: Option
+Colleagues:  Result ObjectList Group Toggle Enable Int ObjectChoice
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Option.java
+
+Mediator Pattern.
+Mediator: Group
+Colleagues:  J2DBench Toggle Int ObjectList ObjectChoice XMLHTMLReporter Node
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Mediator Pattern.
+Mediator: Group$1
+Colleagues:  Node Int ObjectList ObjectChoice
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Mediator Pattern.
+Mediator: RecursiveChildIterator
+Colleagues:  J2DBench ChildIterator
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Mediator Pattern.
+Mediator: EnableSet
+Colleagues:  DependentLink Enable Result InputType OutputType Option BufImg
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Mediator Pattern.
+Mediator: EnableIterator
+Colleagues:  DependentLink Iterator ChildIterator Enable
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Group.java
+
+Mediator Pattern.
+Mediator: Test
+Colleagues:  DependentLink GraphicsTests CMMTests PixelTests ProfileTests DataConversionTests ColorConvertOpTests EmbeddedProfileTests Result InputImageTests InputStreamTests OutputImageTests OutputStreamTests Enable XMLHTMLReporter Node
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Test.java
+
+Mediator Pattern.
+Mediator: DependentLink
+Colleagues:  Test Modifier Toggle Int ObjectList ObjectChoice Iterator Filter Option
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/Test.java
+
+Mediator Pattern.
+Mediator: GraphicsTests
+Colleagues:  J2DBench ObjectList Transform
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/GraphicsTests.java
+
+Mediator Pattern.
+Mediator: GVContext
+Colleagues:  TLContext
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextRenderTests.java
+
+Mediator Pattern.
+Mediator: TLContext
+Colleagues:  TLContext
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextRenderTests.java
+
+Mediator Pattern.
+Mediator: GVContext
+Colleagues:  TLContext
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextMeasureTests.java
+
+Mediator Pattern.
+Mediator: TLExContext
+Colleagues:  TLContext
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextMeasureTests.java
+
+Mediator Pattern.
+Mediator: TCContext
+Colleagues:  TLContext
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextConstructionTests.java
+
+Mediator Pattern.
+Mediator: TLMapContext
+Colleagues:  TLContext TestEnvironment
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextConstructionTests.java
+
+Mediator Pattern.
+Mediator: ACIContext
+Colleagues:  TLContext
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/text/TextConstructionTests.java
+
+Mediator Pattern.
+Mediator: CMMTests
+Colleagues:  J2DBench ColorConversionTests ProfileTests DataConversionTests ColorConvertOpTests EmbeddedProfileTests TestEnvironment
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/CMMTests.java
+
+Mediator Pattern.
+Mediator: IIOTests
+Colleagues:  J2DBench ObjectList InputTests OutputTests InputImageTests InputStreamTests OutputImageTests OutputStreamTests
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/IIOTests.java
+
+Mediator Pattern.
+Mediator: PixelTests
+Colleagues:  Test BufImg
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/PixelTests.java
+
+Mediator Pattern.
+Mediator: ColorConversionTests
+Colleagues:  CMMTests ColorConvertOpTests EmbeddedProfileTests J2DBench DataConversionTests
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/ColorConversionTests.java
+
+Mediator Pattern.
+Mediator: InputTests
+Colleagues:  IIOTests InputImageTests InputStreamTests J2DBench
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputTests.java
+
+Mediator Pattern.
+Mediator: Context
+Colleagues:  Context Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputTests.java
+
+Mediator Pattern.
+Mediator: OutputTests
+Colleagues:  IIOTests OutputImageTests OutputStreamTests J2DBench
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputTests.java
+
+Mediator Pattern.
+Mediator: ColorConvertOpTests
+Colleagues:  ColorConversionTests ObjectList ImageContent CMMTests J2DBench
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/ColorConvertOpTests.java
+
+Mediator Pattern.
+Mediator: InputImageTests
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Mediator Pattern.
+Mediator: Context
+Colleagues:  InputImageTests Context Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Mediator Pattern.
+Mediator: InputImageTests$ToolkitCreateImage$2
+Colleagues:  DependentLink InputType
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Mediator Pattern.
+Mediator: InputImageTests$ImageIORead$1
+Colleagues:  DependentLink InputType
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Mediator Pattern.
+Mediator: ImageReaderRead
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Mediator Pattern.
+Mediator: ImageReaderGetImageMetadata
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputImageTests.java
+
+Mediator Pattern.
+Mediator: InputStreamTests
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Mediator Pattern.
+Mediator: Context
+Colleagues:  Context Context UnsyncByteArrayOutputStream InputStreamTests
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Mediator Pattern.
+Mediator: IISConstruct
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputStreamTests.java
+
+Mediator Pattern.
+Mediator: OutputImageTests
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputImageTests.java
+
+Mediator Pattern.
+Mediator: Context
+Colleagues:  OutputImageTests Context Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputImageTests.java
+
+Mediator Pattern.
+Mediator: OutputImageTests$ImageIOWrite$1
+Colleagues:  DependentLink OutputType
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputImageTests.java
+
+Mediator Pattern.
+Mediator: ImageWriterWrite
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputImageTests.java
+
+Mediator Pattern.
+Mediator: OutputStreamTests
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Mediator Pattern.
+Mediator: Context
+Colleagues:  OutputStreamTests Context Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Mediator Pattern.
+Mediator: IOSConstruct
+Colleagues:  Test Context
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputStreamTests.java
+
+Mediator Pattern.
+Mediator: GroupResultSetHolder
+Colleagues:  IIOComparator SingleResultSetHolder
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+Mediator Pattern.
+Mediator: Enumerator
+Colleagues:  ResultSet GroupResultSetHolder HTMLSeriesReporter IIOComparator XMLHTMLReporter
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+Mediator Pattern.
+Mediator: Enumerator
+Colleagues:  ResultSet ResultHolder
+FileLocation: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/report/J2DAnalyzer.java
+
+Proxy Pattern.
+GraphicsTests is a proxy.
+Option is a proxy interface.
+The real object(s): ObjectList Test
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/GraphicsTests.java
+
+Proxy Pattern.
+CMMTests is a proxy.
+Option is a proxy interface.
+The real object(s): Test ColorConversionTests ProfileTests
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/CMMTests.java
+
+Proxy Pattern.
+IIOTests is a proxy.
+Option is a proxy interface.
+The real object(s): ObjectList Test InputTests OutputTests
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/IIOTests.java
+
+Proxy Pattern.
+PixelTests is a proxy.
+Option is a proxy interface.
+The real object(s): Test BufImg
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/PixelTests.java
+
+Proxy Pattern.
+InputTests is a proxy.
+Option is a proxy interface.
+The real object(s): InputImageTests InputStreamTests
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/InputTests.java
+
+Proxy Pattern.
+OutputTests is a proxy.
+Option is a proxy interface.
+The real object(s): OutputImageTests OutputStreamTests
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/iio/OutputTests.java
+
+Proxy Pattern.
+ColorConvertOpTests is a proxy.
+Option is a proxy interface.
+The real object(s): ObjectList Test
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/tests/cmm/ColorConvertOpTests.java
+
+Proxy Pattern.
+SplitPaneDemo is a proxy.
+DemoModule is a proxy interface.
+The real object(s): JSplitPane
+File Location: Project/loom/src/demo/share/jfc/SwingSet2/SplitPaneDemo.java
+
+Proxy Pattern.
+ProgressBarDemo is a proxy.
+DemoModule is a proxy interface.
+The real object(s): JProgressBar
+File Location: Project/loom/src/demo/share/jfc/SwingSet2/ProgressBarDemo.java
+
+Proxy Pattern.
+TabbedPaneDemo is a proxy.
+DemoModule is a proxy interface.
+The real object(s): JTabbedPane
+File Location: Project/loom/src/demo/share/jfc/SwingSet2/TabbedPaneDemo.java
+
+Proxy Pattern.
+HeadSpin is a proxy.
+JComponent is a proxy interface.
+The real object(s): Timer
+File Location: Project/loom/src/demo/share/jfc/SwingSet2/TabbedPaneDemo.java
+
+Proxy Pattern.
+HtmlDemo is a proxy.
+DemoModule is a proxy interface.
+The real object(s): JEditorPane
+File Location: Project/loom/src/demo/share/jfc/SwingSet2/HtmlDemo.java
+
+Proxy Pattern.
+ColorChooserDemo is a proxy.
+DemoModule is a proxy interface.
+The real object(s): JButton
+File Location: Project/loom/src/demo/share/jfc/SwingSet2/ColorChooserDemo.java
+
+Facade Pattern.
+XDataViewer is a facade class.
+Hidden types: XPlottingViewer XArrayDataViewer XOpenTypeViewer
+Facade access types: XDataViewer
+File Location: Project/loom/src/jdk.jconsole/share/classes/sun/tools/jconsole/inspector/XDataViewer.java
+
+Facade Pattern.
+J2DBench is a facade class.
+Hidden types: Group TestEnvironment Result Destinations GraphicsTests RenderTests PixelTests ImageTests MiscTests TextTests TextRenderTests TextMeasureTests TextConstructionTests IIOTests CMMTests Node ResultSet
+Facade access types: J2DBench$7
+File Location: Project/loom/src/demo/share/java2d/J2DBench/src/j2dbench/J2DBench.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            6
+Factory Method              8
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      1
+Composite                   4
+Decorator                   1
+Facade                      2
+Flyweight                  17
+Proxy                      13
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     2
+Mediator                   49
+Observer                    3
+State                       0
+Strategy                    5
+Template Method             0
+Visitor                     2
+------------------------------
+
+Number of classes processed: 431
+Number of files processed: 1078
+Size of DelegationTable: 2975
+Size of concrete class nodes: 207
+Size of undirected invocation edges: 187
+
+
+nMediatorFacadeDual/nMediator = 0/49
+nImmutable/nFlyweight = 4/17
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+pinot: expr.cpp:481: void Semantic::ReportMethodNotFound(AstMethodInvocation*, TypeSymbol*): Assertion `base' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: expr.cpp:481: void Semantic::ReportMethodNotFound(AstMethodInvocation*, TypeSymbol*): Assertion `base' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: expr.cpp:481: void Semantic::ReportMethodNotFound(AstMethodInvocation*, TypeSymbol*): Assertion `base' failed.
+find: ‘./pinot’ terminated by signal 6
+
+--------- Original GoF Patterns ----------
+
+Decorator Pattern
+GrowableEltArray is a Decorator class
+clear is a decorate operation
+glyphs of type GrowableIntArray is the Decoratee class
+File Location: Project/loom/src/java.desktop/unix/classes/sun/java2d/xr/GrowableEltArray.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+write is a decorate operation
+out of type Writer is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterWriter.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+write is a decorate operation
+out of type Writer is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterWriter.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+write is a decorate operation
+out of type Writer is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterWriter.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+flush is a decorate operation
+out of type Writer is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterWriter.java
+
+Decorator Pattern
+FilterWriter is a Decorator class
+close is a decorate operation
+out of type Writer is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterWriter.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+read is a decorate operation
+in of type Reader is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+read is a decorate operation
+in of type Reader is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+skip is a decorate operation
+in of type Reader is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+ready is a decorate operation
+in of type Reader is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+markSupported is a decorate operation
+in of type Reader is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+mark is a decorate operation
+in of type Reader is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+reset is a decorate operation
+in of type Reader is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterReader.java
+
+Decorator Pattern
+FilterReader is a Decorator class
+close is a decorate operation
+in of type Reader is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/java/io/FilterReader.java
+
+
+ GrowableIntArray Writer Reader
+Strategy Pattern.
+CSSParser is the Context class.
+Reader is the Strategy interface.
+Concrete Strategy classes:  StringReader InputStreamReader BufferedReader CharArrayReader PipedReader WrappingReader FilterReader
+Delegation through reader of type Reader
+File Location: Project/loom/src/java.desktop/share/classes/javax/swing/text/html/CSSParser.java,
+               Project/loom/src/java.base/share/classes/java/io/Reader.java
+
+Strategy Pattern.
+CSSParser is the Context class.
+CSSParserCallback is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through callback of type CSSParserCallback
+File Location: Project/loom/src/java.desktop/share/classes/javax/swing/text/html/CSSParser.java,
+               Project/loom/src/java.desktop/share/classes/javax/swing/text/html/CSSParser.java
+
+Strategy Pattern.
+XRSolidSrcPict is the Context class.
+XRBackend is the Strategy interface.
+Concrete Strategy classes:  XRBackendNative
+Delegation through con of type XRBackend
+File Location: Project/loom/src/java.desktop/unix/classes/sun/java2d/xr/XRSolidSrcPict.java,
+               Project/loom/src/java.desktop/unix/classes/sun/java2d/xr/XRBackend.java
+
+Strategy Pattern.
+XRSolidSrcPict is the Context class.
+XRSurfaceData is the Strategy interface.
+Concrete Strategy classes:  XRWindowSurfaceData XRInternalSurfaceData XRPixmapSurfaceData
+Delegation through srcPict of type XRSurfaceData
+File Location: Project/loom/src/java.desktop/unix/classes/sun/java2d/xr/XRSolidSrcPict.java,
+               Project/loom/src/java.desktop/unix/classes/sun/java2d/xr/XRSurfaceData.java
+
+Flyweight Pattern.
+ServiceUIFactory is a flyweight factory.
+JCOMPONENT_UI is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.desktop/share/classes/javax/print/ServiceUIFactory.java
+
+Flyweight Pattern.
+DefaultFileSystemProvider is a flyweight factory.
+INSTANCE is a flyweight object.
+instance is the getFlyweight method.
+File location: Project/loom/src/java.base/windows/classes/sun/nio/fs/DefaultFileSystemProvider.java
+
+Flyweight Pattern.
+XRColor is a flyweight factory.
+FULL_ALPHA is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.desktop/unix/classes/sun/java2d/xr/XRColor.java
+
+Flyweight Pattern.
+CodingErrorAction is a flyweight factory.
+IGNORE is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.base/share/classes/java/nio/charset/CodingErrorAction.java
+
+Flyweight Pattern.
+Variability is a flyweight factory.
+INVALID is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.internal.jvmstat/share/classes/sun/jvmstat/monitor/Variability.java
+
+Flyweight Pattern.
+Units is a flyweight factory.
+INVALID is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.internal.jvmstat/share/classes/sun/jvmstat/monitor/Units.java
+
+Flyweight Pattern.
+BasicType is a flyweight factory.
+BOOLEAN is a flyweight object (declared public-static-final).
+File location: Project/loom/src/jdk.internal.jvmstat/share/classes/sun/jvmstat/perfdata/monitor/v1_0/BasicType.java
+
+Flyweight Pattern.
+RC2Crypt is immutable.
+File location: Project/loom/src/java.base/share/classes/com/sun/crypto/provider/RC2Crypt.java
+
+Flyweight Pattern.
+DESedeCrypt is immutable.
+File location: Project/loom/src/java.base/share/classes/com/sun/crypto/provider/DESedeCrypt.java
+
+Flyweight Pattern.
+ObjectStreamConstants is a flyweight factory.
+SUBSTITUTION_PERMISSION is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.base/share/classes/java/io/ObjectStreamConstants.java
+
+Template Method Found.
+SelectableChannel is the template class
+register is the template method
+register is a primitive method
+File Location: Project/loom/src/java.base/share/classes/java/nio/channels/SelectableChannel.java
+
+Mediator Pattern.
+Mediator: GrowableRectArray
+Colleagues:  XRDrawLine GrowableIntArray
+FileLocation: Project/loom/src/java.desktop/unix/classes/sun/java2d/xr/GrowableRectArray.java
+
+Adapter Pattern.
+Adapting classes:  Object DTDConstants
+TagStack is an adapter class.
+ContentModelState is the adaptee class.
+File Location: Project/loom/src/java.desktop/share/classes/javax/swing/text/html/parser/TagStack.java
+File Location: Project/loom/src/java.desktop/share/classes/javax/swing/text/html/parser/ContentModelState.java
+
+Facade Pattern.
+XRDrawLine is a facade class.
+Hidden types: DirtyRegion GrowableRectArray
+Facade access types: XRDrawLine
+File Location: Project/loom/src/java.desktop/unix/classes/sun/java2d/xr/XRDrawLine.java
+
+Facade Pattern.
+MonitoredVmUtil is a facade class.
+Hidden types: MonitoredVm StringMonitor
+Facade access types: MonitoredVmUtil
+File Location: Project/loom/src/jdk.internal.jvmstat/share/classes/sun/jvmstat/monitor/MonitoredVmUtil.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     1
+Bridge                      0
+Composite                   0
+Decorator                   3
+Facade                      2
+Flyweight                  10
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    1
+Observer                    0
+State                       0
+Strategy                    4
+Template Method             1
+Visitor                     0
+------------------------------
+
+Number of classes processed: 185
+Number of files processed: 1146
+Size of DelegationTable: 430
+Size of concrete class nodes: 57
+Size of undirected invocation edges: 28
+
+
+nMediatorFacadeDual/nMediator = 0/1
+nImmutable/nFlyweight = 2/10
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+pinot: ast.h:6687: void AstAnnotation::AllocateMemberValuePairs(unsigned int): Assertion `! member_value_pairs' failed.
+find: ‘./pinot’ terminated by signal 6
+
+--------- Original GoF Patterns ----------
+
+Singleton Pattern
+ServerSocketFactory is a Singleton class
+theFactory is the Singleton instance
+getDefault creates and returns theFactory
+File location: Project/loom/src/java.base/share/classes/javax/net/ServerSocketFactory.java
+
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getEra is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getYear is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+isLeapYear is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getMonth is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getDayOfMonth is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getDayOfWeek is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getHours is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getMinutes is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getSeconds is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getMillis is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getTimeOfDay is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+isNormalized is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+isStandardTime is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+isDaylightTime is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getZone is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+isSameDate is a decorate operation
+date of type CalendarDate is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Chain of Responsibility Pattern
+ImmutableGregorianDate is a Chain of Responsibility Handler class
+equals is a handle operation
+date of type Date propogates the request
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+hashCode is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+toString is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getZoneOffset is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getDaylightSaving is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Decorator Pattern
+ImmutableGregorianDate is a Decorator class
+getNormalizedYear is a decorate operation
+date of type Date is the Decoratee class
+File Location: Project/loom/src/java.base/share/classes/sun/util/calendar/ImmutableGregorianDate.java
+
+Chain of Responsibility Pattern
+AnnotationVisitor is a Chain of Responsibility Handler class
+visit is a handle operation
+av of type AnnotationVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/AnnotationVisitor.java
+
+Chain of Responsibility Pattern
+AnnotationVisitor is a Chain of Responsibility Handler class
+visitEnum is a handle operation
+av of type AnnotationVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/AnnotationVisitor.java
+
+Chain of Responsibility Pattern
+AnnotationVisitor is a Chain of Responsibility Handler class
+visitAnnotation is a handle operation
+av of type AnnotationVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/AnnotationVisitor.java
+
+Chain of Responsibility Pattern
+AnnotationVisitor is a Chain of Responsibility Handler class
+visitArray is a handle operation
+av of type AnnotationVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/AnnotationVisitor.java
+
+Chain of Responsibility Pattern
+AnnotationVisitor is a Chain of Responsibility Handler class
+visitEnd is a handle operation
+av of type AnnotationVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/AnnotationVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visit is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitSource is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitModule is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitNestHost is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitOuterClass is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitAnnotation is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitTypeAnnotation is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitAttribute is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitNestMember is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitPermittedSubclass is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitInnerClass is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitRecordComponent is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitField is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitMethod is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+ClassVisitor is a Chain of Responsibility Handler class
+visitEnd is a handle operation
+cv of type ClassVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassVisitor.java
+
+Chain of Responsibility Pattern
+RecordComponentVisitor is a Chain of Responsibility Handler class
+visitAnnotation is a handle operation
+delegate of type RecordComponentVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/RecordComponentVisitor.java
+
+Chain of Responsibility Pattern
+RecordComponentVisitor is a Chain of Responsibility Handler class
+visitTypeAnnotation is a handle operation
+delegate of type RecordComponentVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/RecordComponentVisitor.java
+
+Chain of Responsibility Pattern
+RecordComponentVisitor is a Chain of Responsibility Handler class
+visitAttribute is a handle operation
+delegate of type RecordComponentVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/RecordComponentVisitor.java
+
+Chain of Responsibility Pattern
+RecordComponentVisitor is a Chain of Responsibility Handler class
+visitEnd is a handle operation
+delegate of type RecordComponentVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/RecordComponentVisitor.java
+
+Chain of Responsibility Pattern
+FieldVisitor is a Chain of Responsibility Handler class
+visitAnnotation is a handle operation
+fv of type FieldVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/FieldVisitor.java
+
+Chain of Responsibility Pattern
+FieldVisitor is a Chain of Responsibility Handler class
+visitTypeAnnotation is a handle operation
+fv of type FieldVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/FieldVisitor.java
+
+Chain of Responsibility Pattern
+FieldVisitor is a Chain of Responsibility Handler class
+visitAttribute is a handle operation
+fv of type FieldVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/FieldVisitor.java
+
+Chain of Responsibility Pattern
+FieldVisitor is a Chain of Responsibility Handler class
+visitEnd is a handle operation
+fv of type FieldVisitor propogates the request
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/FieldVisitor.java
+
+ Date AnnotationVisitor ClassVisitor RecordComponentVisitor FieldVisitor
+ Date CalendarDate
+Strategy Pattern.
+ReplaceableUCharacterIterator is the Context class.
+Replaceable is the Strategy interface.
+Concrete Strategy classes:  ReplaceableString
+Delegation through replaceable of type Replaceable
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/icu/impl/ReplaceableUCharacterIterator.java,
+               Project/loom/src/java.base/share/classes/jdk/internal/icu/text/Replaceable.java
+
+Strategy Pattern.
+AnalyzerException is the Context class.
+AbstractInsnNode is the Strategy interface.
+Concrete Strategy classes:  LabelNode MultiANewArrayInsnNode MethodInsnNode InvokeDynamicInsnNode VarInsnNode TableSwitchInsnNode LookupSwitchInsnNode JumpInsnNode IincInsnNode TypeInsnNode LdcInsnNode IntInsnNode FieldInsnNode InsnNode FrameNode LineNumberNode
+Delegation through node of type AbstractInsnNode
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/tree/analysis/AnalyzerException.java,
+               Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/tree/AbstractInsnNode.java
+
+Flyweight Pattern.
+MethodTooLargeException is immutable.
+File location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/MethodTooLargeException.java
+
+Flyweight Pattern.
+ClassTooLargeException is immutable.
+File location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/ClassTooLargeException.java
+
+Flyweight Pattern.
+SafeDHParameterSpec is immutable.
+File location: Project/loom/src/java.base/share/classes/sun/security/util/SafeDHParameterSpec.java
+
+Flyweight Pattern.
+SHAKE256 is immutable.
+File location: Project/loom/src/java.base/share/classes/sun/security/provider/SHAKE256.java
+
+Flyweight Pattern.
+SunCertPathBuilderResult is immutable.
+File location: Project/loom/src/java.base/share/classes/sun/security/provider/certpath/SunCertPathBuilderResult.java
+
+Flyweight Pattern.
+MGF1 is immutable.
+File location: Project/loom/src/java.base/share/classes/sun/security/rsa/MGF1.java
+
+Flyweight Pattern.
+NullCipherSpi is immutable.
+File location: Project/loom/src/java.base/share/classes/javax/crypto/NullCipherSpi.java
+
+Flyweight Pattern.
+JdkConsoleProvider is a flyweight factory.
+DEFAULT_PROVIDER_MODULE_NAME is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.base/share/classes/jdk/internal/io/JdkConsoleProvider.java
+
+Flyweight Pattern.
+StringPrepDataReader is immutable.
+File location: Project/loom/src/java.base/share/classes/jdk/internal/icu/impl/StringPrepDataReader.java
+
+Composite pattern.
+Context is the composite class.
+currentFrameLocalTypes is the composite instance.
+Object is the component class.
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/Context.java
+File Location: rt.jar/java/lang(Object.class)
+
+Composite pattern.
+Context is the composite class.
+currentFrameStackTypes is the composite instance.
+Object is the component class.
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/org/objectweb/asm/Context.java
+File Location: rt.jar/java/lang(Object.class)
+
+Template Method Found.
+UCharacterIterator is the template class
+getText is the template method
+getText is a primitive method
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/icu/text/UCharacterIterator.java
+
+Template Method Found.
+Trie is the template class
+getCodePointOffset is the template method
+getSurrogateOffset is a primitive method
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/icu/impl/Trie.java
+
+find: ‘./pinot’ terminated by signal 11
+
+--------- Original GoF Patterns ----------
+
+Decorator Pattern
+LogCleanupReader is a Decorator class
+ready is a decorate operation
+reader of type Reader is the Decoratee class
+File Location: Project/loom/src/utils/LogCompilation/src/main/java/com/sun/hotspot/tools/compiler/LogCleanupReader.java
+
+Decorator Pattern
+LogCleanupReader is a Decorator class
+reset is a decorate operation
+reader of type Reader is the Decoratee class
+File Location: Project/loom/src/utils/LogCompilation/src/main/java/com/sun/hotspot/tools/compiler/LogCleanupReader.java
+
+Decorator Pattern
+LogCleanupReader is a Decorator class
+close is a decorate operation
+reader of type Reader is the Decoratee class
+File Location: Project/loom/src/utils/LogCompilation/src/main/java/com/sun/hotspot/tools/compiler/LogCleanupReader.java
+
+
+ Reader
+Flyweight Pattern.
+ClassFileConstants is a flyweight factory.
+MODULE is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.base/share/classes/jdk/internal/module/ClassFileConstants.java
+
+Flyweight Pattern.
+ModuleTarget is immutable.
+File location: Project/loom/src/java.base/share/classes/jdk/internal/module/ModuleTarget.java
+
+Flyweight Pattern.
+Settings is a flyweight factory.
+NODE_TEXT is a flyweight object (declared public-static-final).
+File location: Project/loom/src/utils/IdealGraphVisualizer/Settings/src/main/java/com/sun/hotspot/igv/settings/Settings.java
+
+Flyweight Pattern.
+GSSName is a flyweight factory.
+NT_HOSTBASED_SERVICE is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.security.jgss/share/classes/org/ietf/jgss/GSSName.java
+
+Flyweight Pattern.
+KrbTgsRep is immutable.
+File location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/KrbTgsRep.java
+
+Flyweight Pattern.
+DesCbcMd5EType is immutable.
+File location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/DesCbcMd5EType.java
+
+Template Method Found.
+NativeLibrary is the template class
+lookup is the template method
+find is a primitive method
+File Location: Project/loom/src/java.base/share/classes/jdk/internal/loader/NativeLibrary.java
+
+Template Method Found.
+DesCbcEType is the template class
+generateChecksum is the template method
+calculateChecksum is a primitive method
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/DesCbcEType.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+Ticket is a concrete Factory Method class.
+clone is a factory method returns  Ticket
+ which extends Object
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/Ticket.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+AuthorizationDataEntry is a concrete Factory Method class.
+clone is a factory method returns  AuthorizationDataEntry
+ which extends Object
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/AuthorizationDataEntry.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+LastReqEntry is a concrete Factory Method class.
+clone is a factory method returns  LastReqEntry
+ which extends Object
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/LastReqEntry.java
+
+Mediator Pattern.
+Mediator: Ticket
+Colleagues:  CCacheOutputStream Realm EncryptedData APReq PrincipalName
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/Ticket.java
+
+Mediator Pattern.
+Mediator: KDCRep
+Colleagues:  TGSRep Realm PrincipalName Ticket EncryptedData ASRep
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/KDCRep.java
+
+Mediator Pattern.
+Mediator: EncKDCRepPart
+Colleagues:  EncTGSRepPart EncryptionKey LastReq KerberosTime TicketFlags Realm PrincipalName HostAddresses PAData EncASRepPart KerberosFlags
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/EncKDCRepPart.java
+
+Mediator Pattern.
+Mediator: Des3
+Colleagues:  Des3CbcHmacSha1KdEType Des3DkCrypto DkCrypto
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Des3.java
+
+Mediator Pattern.
+Mediator: ArcFourHmac
+Colleagues:  ArcFourHmacEType ArcFourCrypto
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/ArcFourHmac.java
+
+Mediator Pattern.
+Mediator: Aes128
+Colleagues:  Aes128CtsHmacSha1EType AesDkCrypto
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Aes128.java
+
+Mediator Pattern.
+Mediator: Aes256
+Colleagues:  Aes256CtsHmacSha1EType AesDkCrypto
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Aes256.java
+
+Mediator Pattern.
+Mediator: Aes128Sha2
+Colleagues:  Aes128CtsHmacSha2EType AesSha2DkCrypto
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Aes128Sha2.java
+
+Mediator Pattern.
+Mediator: Aes256Sha2
+Colleagues:  Aes256CtsHmacSha2EType AesSha2DkCrypto
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Aes256Sha2.java
+
+Mediator Pattern.
+Mediator: MessageToken
+Colleagues:  MicToken MessageProp CipherHelper GSSToken WrapToken MessageTokenHeader GSSHeader
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/jgss/krb5/MessageToken.java
+
+Mediator Pattern.
+Mediator: WrapToken
+Colleagues:  MicToken CipherHelper MessageTokenHeader
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/jgss/krb5/WrapToken.java
+
+Mediator Pattern.
+Mediator: KDCReq
+Colleagues:  TGSReq PAData ASReq
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/KDCReq.java
+
+Mediator Pattern.
+Mediator: ArcFourHmacEType
+Colleagues:  DesCbcEType ArcFourHmac
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/ArcFourHmacEType.java
+
+Mediator Pattern.
+Mediator: Aes128CtsHmacSha2EType
+Colleagues:  DesCbcEType Aes128Sha2
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Aes128CtsHmacSha2EType.java
+
+Mediator Pattern.
+Mediator: DesCbcCrcEType
+Colleagues:  DesCbcEType crc32
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/DesCbcCrcEType.java
+
+Mediator Pattern.
+Mediator: Des3CbcHmacSha1KdEType
+Colleagues:  DesCbcEType Des3
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Des3CbcHmacSha1KdEType.java
+
+Mediator Pattern.
+Mediator: Aes128CtsHmacSha1EType
+Colleagues:  DesCbcEType Aes128
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Aes128CtsHmacSha1EType.java
+
+Mediator Pattern.
+Mediator: Aes256CtsHmacSha1EType
+Colleagues:  DesCbcEType Aes256
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Aes256CtsHmacSha1EType.java
+
+Mediator Pattern.
+Mediator: Aes256CtsHmacSha2EType
+Colleagues:  DesCbcEType Aes256Sha2
+FileLocation: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Aes256CtsHmacSha2EType.java
+
+Facade Pattern.
+CCacheOutputStream is a facade class.
+Hidden types: PrincipalName EncryptionKey KerberosTime HostAddresses AuthorizationData Ticket KerberosFlags
+Facade access types: CCacheOutputStream
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/ccache/CCacheOutputStream.java
+
+Facade Pattern.
+KDCRep is a facade class.
+Hidden types: PAData Realm PrincipalName Ticket EncryptedData
+Facade access types: ASRep TGSRep
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/KDCRep.java
+
+Facade Pattern.
+EncKDCRepPart is a facade class.
+Hidden types: EncryptionKey LastReq KerberosTime TicketFlags Realm PrincipalName HostAddresses PAData KerberosFlags
+Facade access types: EncASRepPart EncTGSRepPart
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/EncKDCRepPart.java
+
+Facade Pattern.
+Des3 is a facade class.
+Hidden types: Des3DkCrypto DkCrypto
+Facade access types: HmacSha1Des3KdCksumType Des3CbcHmacSha1KdEType
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/crypto/Des3.java
+
+Facade Pattern.
+WrapToken is a facade class.
+Hidden types: GSSHeader CipherHelper MessageProp Confounder
+Facade access types: WrapToken
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/jgss/krb5/WrapToken.java
+
+Facade Pattern.
+APReq is a facade class.
+Hidden types: APOptions Ticket EncryptedData KerberosFlags
+Facade access types: APReq
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/APReq.java
+
+Facade Pattern.
+KrbCred is a facade class.
+Hidden types: Credentials KerberosTime EncryptedData KRBCred KDCOptions KrbTgsReq
+Facade access types: KrbCred
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/KrbCred.java
+
+Facade Pattern.
+KDCReq is a facade class.
+Hidden types: PAData KDCReqBody
+Facade access types: ASReq TGSReq
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/internal/KDCReq.java
+
+Facade Pattern.
+KrbTgsRep is a facade class.
+Hidden types: PrincipalName KrbTgsReq EncryptedData
+Facade access types: KrbTgsRep
+File Location: Project/loom/src/java.security.jgss/share/classes/sun/security/krb5/KrbTgsRep.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            1
+Factory Method              1
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   1
+Facade                      9
+Flyweight                   6
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                   19
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             2
+Visitor                     0
+------------------------------
+
+Number of classes processed: 166
+Number of files processed: 1025
+Size of DelegationTable: 1100
+Size of concrete class nodes: 112
+Size of undirected invocation edges: 98
+
+
+nMediatorFacadeDual/nMediator = 5/19
+nImmutable/nFlyweight = 3/6
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+
+--------- Original GoF Patterns ----------
+
+Singleton Pattern
+FileSystem is a Singleton class
+fs is the Singleton instance
+open creates and returns fs
+File location: Project/loom/src/jdk.management.agent/share/classes/jdk/internal/agent/FileSystem.java
+
+
+Decorator Pattern
+Literal is a Decorator class
+toString is a decorate operation
+value of type Object is the Decoratee class
+File Location: Project/loom/src/jdk.jcmd/share/classes/sun/tools/jstat/Literal.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getResponseHeaders is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getHttpContext is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+close is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getRequestBody is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getResponseCode is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getResponseBody is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+sendResponseHeaders is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getRemoteAddress is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getLocalAddress is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getProtocol is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getAttribute is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+setAttribute is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+setStreams is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+Decorator Pattern
+DelegatingHttpExchange is a Decorator class
+getPrincipal is a decorate operation
+exchange of type HttpExchange is the Decoratee class
+File Location: Project/loom/src/jdk.httpserver/share/classes/sun/net/httpserver/DelegatingHttpExchange.java
+
+
+ Object HttpExchange
+Strategy Pattern.
+NodeChangeEvent is the Context class.
+Preferences is the Strategy interface.
+Concrete Strategy classes: 
+Delegation through child of type Preferences
+File Location: Project/loom/src/java.prefs/share/classes/java/util/prefs/NodeChangeEvent.java,
+               Project/loom/src/java.prefs/share/classes/java/util/prefs/Preferences.java
+
+Flyweight Pattern.
+JlinkPermission is immutable.
+File location: Project/loom/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/JlinkPermission.java
+
+Flyweight Pattern.
+PluginException is immutable.
+File location: Project/loom/src/jdk.jlink/share/classes/jdk/tools/jlink/plugin/PluginException.java
+
+Flyweight Pattern.
+AddOptionsPlugin is immutable.
+File location: Project/loom/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/plugins/AddOptionsPlugin.java
+
+Flyweight Pattern.
+VendorBugURLPlugin is immutable.
+File location: Project/loom/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/plugins/VendorBugURLPlugin.java
+
+Flyweight Pattern.
+VendorVersionPlugin is immutable.
+File location: Project/loom/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/plugins/VendorVersionPlugin.java
+
+Flyweight Pattern.
+VendorVMBugURLPlugin is immutable.
+File location: Project/loom/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/plugins/VendorVMBugURLPlugin.java
+
+Flyweight Pattern.
+JdpException is immutable.
+File location: Project/loom/src/jdk.management.agent/share/classes/sun/management/jdp/JdpException.java
+
+Flyweight Pattern.
+JdpPacketWriter is immutable.
+File location: Project/loom/src/jdk.management.agent/share/classes/sun/management/jdp/JdpPacketWriter.java
+
+Flyweight Pattern.
+CheckFailedException is immutable.
+File location: Project/loom/src/java.net.http/share/classes/jdk/internal/net/http/websocket/CheckFailedException.java
+
+Flyweight Pattern.
+ByteSequence is immutable.
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/util/ByteSequence.java
+
+Flyweight Pattern.
+ByteArrayStream is immutable.
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/bcel/internal/util/ByteSequence.java
+
+Composite pattern.
+IntHashTable is the composite class.
+objs is the composite instance.
+Object is the component class.
+File Location: Project/loom/src/jdk.compiler/share/classes/com/sun/tools/javac/util/IntHashTable.java
+File Location: rt.jar/java/lang(Object.class)
+
+find: ‘./pinot’ terminated by signal 11
+
+--------- Original GoF Patterns ----------
+
+Decorator Pattern
+XMLContentSpec is a Decorator class
+hashCode is a decorate operation
+otherValue of type Object is the Decoratee class
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/dtd/XMLContentSpec.java
+
+Chain of Responsibility Pattern
+CMUniOp is a Chain of Responsibility Handler class
+isNullable is a handle operation
+fChild of type CMNode propogates the request
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/dtd/models/CMUniOp.java
+
+Decorator Pattern
+SynchronizedSymbolTable is a Decorator class
+addSymbol is a decorate operation
+fSymbolTable of type SymbolTable is the Decoratee class
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/SynchronizedSymbolTable.java
+
+Decorator Pattern
+SynchronizedSymbolTable is a Decorator class
+addSymbol is a decorate operation
+fSymbolTable of type SymbolTable is the Decoratee class
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/SynchronizedSymbolTable.java
+
+Decorator Pattern
+SynchronizedSymbolTable is a Decorator class
+containsSymbol is a decorate operation
+fSymbolTable of type SymbolTable is the Decoratee class
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/SynchronizedSymbolTable.java
+
+Decorator Pattern
+SynchronizedSymbolTable is a Decorator class
+containsSymbol is a decorate operation
+fSymbolTable of type SymbolTable is the Decoratee class
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/SynchronizedSymbolTable.java
+
+Chain of Responsibility Pattern
+ShadowedSymbolTable is a Chain of Responsibility Handler class
+addSymbol is a handle operation
+fSymbolTable of type SymbolTable propogates the request
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/ShadowedSymbolTable.java
+
+Chain of Responsibility Pattern
+ShadowedSymbolTable is a Chain of Responsibility Handler class
+addSymbol is a handle operation
+fSymbolTable of type SymbolTable propogates the request
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/ShadowedSymbolTable.java
+
+Decorator Pattern
+ShadowedSymbolTable is a Decorator class
+hash is a decorate operation
+fSymbolTable of type SymbolTable is the Decoratee class
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/ShadowedSymbolTable.java
+
+Decorator Pattern
+ShadowedSymbolTable is a Decorator class
+hash is a decorate operation
+fSymbolTable of type SymbolTable is the Decoratee class
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/ShadowedSymbolTable.java
+
+ CMNode SymbolTable
+ Object SymbolTable
+Strategy Pattern.
+ArgumentList is the Context class.
+Expression is the Strategy interface.
+Concrete Strategy classes:  Pattern VariableRefBase AttributeValue LiteralExpr RelativeLocationPath Predicate UnionPathExpr FilterParentPath BinOpExpr FilteredAbsoluteLocationPath LogicalExpr IntExpr EqualityExpr FilterExpr BooleanExpr UnaryOpExpr RealExpr AbsoluteLocationPath RelationalExpr
+Delegation through _arg of type Expression
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/ArgumentList.java,
+               Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/Expression.java
+
+Strategy Pattern.
+UTF16Reader is the Context class.
+MessageFormatter is the Strategy interface.
+Concrete Strategy classes:  XMLMessageFormatter XSMessageFormatter XMLMessageFormatter_sv XMLMessageFormatter_ja XMLMessageFormatter_ko XMLMessageFormatter_zh_TW XMLMessageFormatter_pt_BR XMLMessageFormatter_es XMLMessageFormatter_de XMLMessageFormatter_zh_CN XMLMessageFormatter_fr XMLMessageFormatter_it
+Delegation through fFormatter of type MessageFormatter
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/io/UTF16Reader.java,
+               Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/MessageFormatter.java
+
+Strategy Pattern.
+XMLSimpleType is the Context class.
+DatatypeValidator is the Strategy interface.
+Concrete Strategy classes:  IDDatatypeValidator IDREFDatatypeValidator ENTITYDatatypeValidator NMTOKENDatatypeValidator StringDatatypeValidator ListDatatypeValidator NOTATIONDatatypeValidator
+Delegation through datatypeValidator of type DatatypeValidator
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/dtd/XMLSimpleType.java,
+               Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/dv/DatatypeValidator.java
+
+Flyweight Pattern.
+ConfigurationError is immutable.
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/utils/ConfigurationError.java
+
+Flyweight Pattern.
+XPATHErrorResources is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources.java
+
+Flyweight Pattern.
+PsuedoNames is a flyweight factory.
+PSEUDONAME_ANY is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/compiler/PsuedoNames.java
+
+Flyweight Pattern.
+XPATHErrorResources_es is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_es.java
+
+Flyweight Pattern.
+XPATHErrorResources_sv is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_sv.java
+
+Flyweight Pattern.
+XPATHErrorResources_it is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_it.java
+
+Flyweight Pattern.
+XPATHErrorResources_ko is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_ko.java
+
+Flyweight Pattern.
+XPATHErrorResources_pt_BR is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_pt_BR.java
+
+Flyweight Pattern.
+XPATHErrorResources_ja is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_ja.java
+
+Flyweight Pattern.
+XPATHErrorResources_zh_CN is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_zh_CN.java
+
+Flyweight Pattern.
+XPATHErrorResources_zh_TW is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_zh_TW.java
+
+Flyweight Pattern.
+XPATHErrorResources_de is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_de.java
+
+Flyweight Pattern.
+XPATHErrorResources_fr is a flyweight factory.
+ERROR0000 is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xpath/internal/res/XPATHErrorResources_fr.java
+
+Flyweight Pattern.
+XSLTErrorResources is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources.java
+
+Flyweight Pattern.
+ArgumentList is immutable.
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/ArgumentList.java
+
+Flyweight Pattern.
+IdPattern is immutable.
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/IdPattern.java
+
+Flyweight Pattern.
+KeyPattern is immutable.
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/compiler/KeyPattern.java
+
+Flyweight Pattern.
+XSLTErrorResources_it is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_it.java
+
+Flyweight Pattern.
+XSLTErrorResources_sv is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_sv.java
+
+Flyweight Pattern.
+XSLTErrorResources_zh_TW is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_zh_TW.java
+
+Flyweight Pattern.
+XSLTErrorResources_ja is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_ja.java
+
+Flyweight Pattern.
+XSLTErrorResources_fr is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_fr.java
+
+Flyweight Pattern.
+XSLTErrorResources_zh_CN is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_zh_CN.java
+
+Flyweight Pattern.
+XSLTErrorResources_ko is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_ko.java
+
+Flyweight Pattern.
+XSLTErrorResources_es is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_es.java
+
+Flyweight Pattern.
+XSLTErrorResources_pt_BR is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_pt_BR.java
+
+Flyweight Pattern.
+XSLTErrorResources_de is a flyweight factory.
+ER_INVALID_NAMESPACE_URI_VALUE_FOR_RESULT_PREFIX is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/res/XSLTErrorResources_de.java
+
+Flyweight Pattern.
+XMLSymbols is a flyweight factory.
+EMPTY_STRING is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/XMLSymbols.java
+
+Flyweight Pattern.
+XSCMRepeatingLeaf is immutable.
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xs/models/XSCMRepeatingLeaf.java
+
+Flyweight Pattern.
+XInt is immutable.
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xs/util/XInt.java
+
+Flyweight Pattern.
+DraconianErrorHandler is a flyweight factory.
+theInstance is a flyweight object (declared public-static-final).
+File location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/util/DraconianErrorHandler.java
+
+Template Method Found.
+CMNode is the template class
+firstPos is the template method
+calcFirstPos is a primitive method
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/dtd/models/CMNode.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+IntegerArray is a concrete Factory Method class.
+clone is a factory method returns  IntegerArray
+ which extends Object
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xalan/internal/xsltc/util/IntegerArray.java
+
+Factory Method pattern.
+Object is a Factory Method class.
+Match is a concrete Factory Method class.
+clone is a factory method returns  Match
+ which extends Object
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xpath/regex/Match.java
+
+Factory Method pattern.
+DecimalDV is a Factory Method class.
+IntegerDV is a concrete Factory Method class.
+getActualValue is a factory method returns  XDecimal
+ which extends Object
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/dv/xs/IntegerDV.java
+
+Factory Method pattern.
+DefaultNode is a Factory Method class.
+ElementImpl is a concrete Factory Method class.
+getAttributes is a factory method returns  NamedNodeMapImpl
+ which extends NamedNodeMap
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xs/opti/ElementImpl.java
+
+Observer Pattern.
+ElementImpl is an observer iterator.
+Attr is the generic type for the listeners.
+setAttribute is the notify method.
+setValue is the update method.
+Subject class(es):
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xs/opti/ElementImpl.java
+
+Mediator Pattern.
+Mediator: CMUniOp
+Colleagues:  CMNode CMStateSet
+FileLocation: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/dtd/models/CMUniOp.java
+
+Mediator Pattern.
+Mediator: CMBinOp
+Colleagues:  CMNode CMStateSet
+FileLocation: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/dtd/models/CMBinOp.java
+
+Mediator Pattern.
+Mediator: XSCMLeaf
+Colleagues:  CMNode CMStateSet
+FileLocation: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xs/models/XSCMLeaf.java
+
+Mediator Pattern.
+Mediator: XSCMBinOp
+Colleagues:  CMNode CMStateSet
+FileLocation: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xs/models/XSCMBinOp.java
+
+Facade Pattern.
+XSDeclarationPool is a facade class.
+Hidden types: XSElementDecl XSAttributeDecl XSAttributeUseImpl XSComplexTypeDecl BaseSchemaDVFactory XSSimpleTypeDecl XSParticleDecl XSModelGroupImpl
+Facade access types: XSDeclarationPool
+File Location: Project/loom/src/java.xml/share/classes/com/sun/org/apache/xerces/internal/impl/xs/XSDeclarationPool.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            3
+Factory Method              3
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   2
+Facade                      1
+Flyweight                  31
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     2
+Mediator                    4
+Observer                    1
+State                       0
+Strategy                    3
+Template Method             1
+Visitor                     0
+------------------------------
+
+Number of classes processed: 181
+Number of files processed: 964
+Size of DelegationTable: 632
+Size of concrete class nodes: 142
+Size of undirected invocation edges: 26
+
+
+nMediatorFacadeDual/nMediator = 0/4
+nImmutable/nFlyweight = 6/31
+nFlyweightGoFVersion = 0
+find: ‘./pinot’ terminated by signal 11
+pinot: ast.h:6700: void AstModifiers::AllocateModifiers(unsigned int): Assertion `! modifiers && estimate' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: ast.h:6700: void AstModifiers::AllocateModifiers(unsigned int): Assertion `! modifiers && estimate' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: ast.h:6940: void AstFieldDeclaration::AllocateVariableDeclarators(unsigned int): Assertion `! variable_declarators' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: ast.h:6649: void AstBlock::AllocateStatements(unsigned int): Assertion `! block_statements' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: ast.h:6953: void AstMethodDeclarator::AllocateFormalParameters(unsigned int): Assertion `! formal_parameters' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: ast.h:6687: void AstAnnotation::AllocateMemberValuePairs(unsigned int): Assertion `! member_value_pairs' failed.
+find: ‘./pinot’ terminated by signal 6
+
+--------- Original GoF Patterns ----------
+
+Singleton Pattern
+OS is a Singleton class
+current is the Singleton instance
+current creates and returns current
+File location: Project/loom/test/failure_handler/src/share/classes/jdk/test/failurehandler/jtreg/OS.java
+
+
+
+
+Strategy Pattern.
+Root is the Context class.
+JavaHeapObject is the Strategy interface.
+Concrete Strategy classes:  JavaLazyReadObject JavaClass
+Delegation through referer of type JavaHeapObject
+File Location: Project/loom/test/lib/jdk/test/lib/hprof/model/Root.java,
+               Project/loom/test/lib/jdk/test/lib/hprof/model/JavaHeapObject.java
+
+Strategy Pattern.
+ReferenceChain is the Context class.
+JavaHeapObject is the Strategy interface.
+Concrete Strategy classes:  JavaLazyReadObject JavaClass
+Delegation through obj of type JavaHeapObject
+File Location: Project/loom/test/lib/jdk/test/lib/hprof/model/ReferenceChain.java,
+               Project/loom/test/lib/jdk/test/lib/hprof/model/JavaHeapObject.java
+
+Strategy Pattern.
+JavaStatic is the Context class.
+JavaThing is the Strategy interface.
+Concrete Strategy classes:  JavaHeapObject JavaObjectRef JavaValue JavaLong JavaBoolean JavaByte JavaShort JavaChar JavaInt JavaFloat JavaDouble
+Delegation through value of type JavaThing
+File Location: Project/loom/test/lib/jdk/test/lib/hprof/model/JavaStatic.java,
+               Project/loom/test/lib/jdk/test/lib/hprof/model/JavaThing.java
+
+Flyweight Pattern.
+SkippedException is immutable.
+File location: Project/loom/test/lib/jtreg/SkippedException.java
+
+Flyweight Pattern.
+Container is a flyweight factory.
+ENGINE_COMMAND is a flyweight object (declared public-static-final).
+File location: Project/loom/test/lib/jdk/test/lib/Container.java
+
+Flyweight Pattern.
+TransformUtil is a flyweight factory.
+BeforePattern is a flyweight object (declared public-static-final).
+File location: Project/loom/test/hotspot/jtreg/testlibrary/jvmti/TransformUtil.java
+
+Template Method Found.
+XRun is the template class
+run is the template method
+xrun is a primitive method
+File Location: Project/loom/test/lib/jdk/test/lib/thread/XRun.java
+
+Observer Pattern.
+StackTrace is an observer iterator.
+StackFrame is the generic type for the listeners.
+resolve is the notify method.
+resolve is the update method.
+Subject class(es): Root
+File Location: Project/loom/test/lib/jdk/test/lib/hprof/model/StackTrace.java
+
+Mediator Pattern.
+Mediator: StackTrace
+Colleagues:  Root StackFrame
+FileLocation: Project/loom/test/lib/jdk/test/lib/hprof/model/StackTrace.java
+
+Facade Pattern.
+Root is a facade class.
+Hidden types: Misc Snapshot StackTrace
+Facade access types: Root
+File Location: Project/loom/test/lib/jdk/test/lib/hprof/model/Root.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   1
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      1
+Flyweight                   3
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    1
+Observer                    1
+State                       0
+Strategy                    3
+Template Method             1
+Visitor                     0
+------------------------------
+
+Number of classes processed: 92
+Number of files processed: 1119
+Size of DelegationTable: 271
+Size of concrete class nodes: 72
+Size of undirected invocation edges: 14
+
+
+nMediatorFacadeDual/nMediator = 0/1
+nImmutable/nFlyweight = 1/3
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+
+--------- Original GoF Patterns ----------
+
+
+
+Strategy Pattern.
+Test8002069 is the Context class.
+O is the Strategy interface.
+Concrete Strategy classes:  A B
+Delegation through o of type O
+File Location: Project/loom/test/hotspot/jtreg/compiler/c2/Test8002069.java,
+               Project/loom/test/hotspot/jtreg/compiler/c2/Test8002069.java
+
+Mediator Pattern.
+Mediator: Payload
+Colleagues:  E A TestEliminatedCloneBadMemEdge
+FileLocation: Project/loom/test/hotspot/jtreg/compiler/arguments/TestStressReflectiveCode.java
+
+Mediator Pattern.
+Mediator: E
+Colleagues:  TestCloneAccess Payload A TestEliminatedCloneBadMemEdge
+FileLocation: Project/loom/test/hotspot/jtreg/compiler/arraycopy/TestCloneAccess.java
+
+Mediator Pattern.
+Mediator: A
+Colleagues:  TestEliminatedArrayCopyDeopt Payload E TestEliminatedCloneBadMemEdge
+FileLocation: Project/loom/test/hotspot/jtreg/compiler/arraycopy/TestEliminatedArrayCopyDeopt.java
+
+Mediator Pattern.
+Mediator: Test
+Colleagues:  Printer Printer
+FileLocation: Project/loom/test/hotspot/jtreg/compiler/c2/cr6711117/Test.java
+
+Mediator Pattern.
+Mediator: Test_Class_4
+Colleagues:  Printer Printer
+FileLocation: Project/loom/test/hotspot/jtreg/compiler/c2/cr6711117/Test.java
+
+Mediator Pattern.
+Mediator: Test6712835
+Colleagues:  Printer Printer
+FileLocation: Project/loom/test/hotspot/jtreg/compiler/c2/cr6712835/Test6712835.java
+
+Proxy Pattern.
+Test6912517 is a proxy.
+Runnable is a proxy interface.
+The real object(s): Thread
+File Location: Project/loom/test/hotspot/jtreg/compiler/c2/Test6912517.java
+
+Facade Pattern.
+TestValueNumberingNullObject is a facade class.
+Hidden types: T1 T2
+Facade access types: TestValueNumberingNullObject
+File Location: Project/loom/test/hotspot/jtreg/compiler/c1/TestValueNumberingNullObject.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      1
+Flyweight                   0
+Proxy                       1
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    6
+Observer                    0
+State                       0
+Strategy                    1
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 424
+Number of files processed: 1140
+Size of DelegationTable: 3563
+Size of concrete class nodes: 401
+Size of undirected invocation edges: 63
+
+
+nMediatorFacadeDual/nMediator = 0/6
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+pinot: modifier.cpp:77: AccessFlags Semantic::ProcessModifiers(AstModifiers*, const wchar_t*, u2, u2): Assertion `false && "token was not modifier"' failed.
+find: ‘./pinot’ terminated by signal 6
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+UnverifiableIntf is a flyweight factory.
+x is a flyweight object (declared public-static-final).
+File location: Project/loom/test/hotspot/jtreg/runtime/cds/appcds/test-classes/VerifierTest0.java
+
+Flyweight Pattern.
+ParallelClassesTransform is a flyweight factory.
+BEFORE_PATTERN is a flyweight object (declared public-static-final).
+File location: Project/loom/test/hotspot/jtreg/runtime/cds/appcds/jvmti/parallelLoad/ParallelClassesTransform.java
+
+Flyweight Pattern.
+Consts is a flyweight factory.
+UNKNOWN is a flyweight object (declared public-static-final).
+File location: Project/loom/test/hotspot/jtreg/serviceability/tmtools/jstack/utils/Consts.java
+
+Composite pattern.
+MemoryConsumer is the composite class.
+array is the composite instance.
+Object is the component class.
+File Location: Project/loom/test/hotspot/jtreg/gc/g1/plab/lib/MemoryConsumer.java
+File Location: rt.jar/java/lang(Object.class)
+
+Template Method Found.
+TestJNIGlobalRefs is the template class
+seedGlobalRef is the template method
+makeGlobalRef is a primitive method
+File Location: Project/loom/test/hotspot/jtreg/gc/shenandoah/jni/TestJNIGlobalRefs.java
+
+Template Method Found.
+JdwpReply is the template class
+initFromStream is the template method
+parseData is a primitive method
+File Location: Project/loom/test/hotspot/jtreg/serviceability/jdwp/JdwpReply.java
+
+find: ‘./pinot’ terminated by signal 11
+find: ‘./pinot’ terminated by signal 11
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 19
+Number of files processed: 895
+Size of DelegationTable: 140
+Size of concrete class nodes: 11
+Size of undirected invocation edges: 4
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+Strategy Pattern.
+DeadlockedThread is the Context class.
+DeadlockLocker is the Strategy interface.
+Concrete Strategy classes:  SynchronizedBlockLocker SynchronizedMethodLocker ReentrantLockLocker JNIMonitorLocker
+Delegation through locker of type DeadlockLocker
+File Location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/share/locks/DeadlockedThread.java,
+               Project/loom/test/hotspot/jtreg/vmTestbase/nsk/share/locks/DeadlockLocker.java
+
+Flyweight Pattern.
+JdbCommand is a flyweight factory.
+ls is a flyweight object (declared public-static-final).
+File location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/share/jdb/JdbCommand.java
+
+Flyweight Pattern.
+MemoryStrategy is a flyweight factory.
+LOW is a flyweight object (declared public-static-final).
+File location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/share/gc/gp/MemoryStrategy.java
+
+Composite pattern.
+Interrupter is the composite class.
+targets is the composite instance.
+Thread is the component class.
+File Location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/stress/jni/Interrupter.java
+File Location: rt.jar/java/lang(Thread.class)
+
+Factory Method pattern.
+AbstractDebuggeeTest is a Factory Method class.
+AbstractJDWPDebuggee is a concrete Factory Method class.
+createArgumentHandler is a factory method returns  ArgumentHandler
+ which extends DebugeeArgumentHandler
+File Location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/share/jdwp/AbstractJDWPDebuggee.java
+
+Observer Pattern.
+Interrupter is an observer iterator.
+Thread is the generic type for the listeners.
+run is the notify method.
+interrupt is the update method.
+Subject class(es):
+File Location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/stress/jni/Interrupter.java
+
+Mediator Pattern.
+Mediator: TreeNode
+Colleagues:  Tree Memory
+FileLocation: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/share/gc/tree/TreeNode.java
+
+Facade Pattern.
+TreeNode is a facade class.
+Hidden types: Memory GarbageProducer
+Facade access types: Tree
+File Location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/share/gc/tree/TreeNode.java
+
+Facade Pattern.
+ownmoninf001a is a facade class.
+Hidden types: Wicket ownmoninf001
+Facade access types: ownmoninf001a
+File Location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/jvmti/GetOwnedMonitorInfo/ownmoninf001.java
+
+Facade Pattern.
+MyThread is a facade class.
+Hidden types: Wicket hs104t002
+Facade access types: MyThread
+File Location: Project/loom/test/hotspot/jtreg/vmTestbase/nsk/jvmti/scenarios/hotswap/HS104/hs104t002/newclass00/MyThread.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            1
+Factory Method              1
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   1
+Decorator                   0
+Facade                      3
+Flyweight                   2
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    1
+Observer                    1
+State                       0
+Strategy                    1
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 2205
+Number of files processed: 1057
+Size of DelegationTable: 1171
+Size of concrete class nodes: 2166
+Size of undirected invocation edges: 35
+
+
+nMediatorFacadeDual/nMediator = 1/1
+nImmutable/nFlyweight = 0/2
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 107
+Number of files processed: 995
+Size of DelegationTable: 84
+Size of concrete class nodes: 83
+Size of undirected invocation edges: 7
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 21
+Number of files processed: 968
+Size of DelegationTable: 18
+Size of concrete class nodes: 21
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 55
+Number of files processed: 954
+Size of DelegationTable: 0
+Size of concrete class nodes: 53
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 1
+Number of files processed: 921
+Size of DelegationTable: 0
+Size of concrete class nodes: 1
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+TransformerUtilFactory is a flyweight factory.
+DOM is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jaxp/javax/xml/jaxp/unittest/transform/TransformerUtilFactory.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   1
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 14
+Number of files processed: 1082
+Size of DelegationTable: 55
+Size of concrete class nodes: 9
+Size of undirected invocation edges: 5
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/1
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+Chain of Responsibility Pattern
+BinaryTreeTest is a Chain of Responsibility Handler class
+print is a handle operation
+right of type BinaryTreeTest propogates the request
+File Location: Project/loom/test/jdk/java/io/Serializable/oldTests/BinaryTree.java
+
+Decorator Pattern
+OneByteInputStream is a Decorator class
+read is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: Project/loom/test/jdk/java/io/charStreams/SmallReads.java
+
+ BinaryTreeTest
+ InputStream
+Flyweight Pattern.
+InterfaceWithCode is a flyweight factory.
+foo is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/com/sun/jdi/RefTypes.java
+
+Flyweight Pattern.
+TypeSafeEnum is a flyweight factory.
+FIRST is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/java/io/Serializable/typeSafeEnum/TypeSafeEnum.java
+
+Mediator Pattern.
+Mediator: ClosedFISTest
+Colleagues:  ClosedFOSTest ClosedRAFTest ReadOnlyRAFTest
+FileLocation: Project/loom/test/jdk/java/io/IOException/LastErrorString.java
+
+Mediator Pattern.
+Mediator: ClosedFOSTest
+Colleagues:  ClosedFISTest ClosedRAFTest ReadOnlyRAFTest
+FileLocation: Project/loom/test/jdk/java/io/IOException/LastErrorString.java
+
+Mediator Pattern.
+Mediator: ClosedRAFTest
+Colleagues:  ClosedFISTest ClosedFOSTest ReadOnlyRAFTest
+FileLocation: Project/loom/test/jdk/java/io/IOException/LastErrorString.java
+
+Mediator Pattern.
+Mediator: ReadOnlyRAFTest
+Colleagues:  ClosedFISTest ClosedFOSTest ClosedRAFTest
+FileLocation: Project/loom/test/jdk/java/io/IOException/LastErrorString.java
+
+Mediator Pattern.
+Mediator: StringGenerator
+Colleagues:  StringConvert CharGenerator LineGenerator
+FileLocation: Project/loom/test/jdk/java/io/charStreams/StringGenerator.java
+
+Mediator Pattern.
+Mediator: LineGenerator
+Colleagues:  RandomLineSource StringGenerator IntGenerator
+FileLocation: Project/loom/test/jdk/java/io/charStreams/LineGenerator.java
+
+Adapter Pattern.
+Adapting classes:  Object Runnable
+RandomLineSource is an adapter class.
+LineGenerator is the adaptee class.
+File Location: Project/loom/test/jdk/java/io/charStreams/RandomLineSource.java
+File Location: Project/loom/test/jdk/java/io/charStreams/LineGenerator.java
+
+Facade Pattern.
+StringConvert is a facade class.
+Hidden types: IntGenerator StringGenerator
+Facade access types: StringConvert
+File Location: Project/loom/test/jdk/java/io/charStreams/StringConvert.java
+
+Facade Pattern.
+LineGenerator is a facade class.
+Hidden types: StringGenerator IntGenerator
+Facade access types: RandomLineSource
+File Location: Project/loom/test/jdk/java/io/charStreams/LineGenerator.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     1
+Bridge                      0
+Composite                   0
+Decorator                   1
+Facade                      2
+Flyweight                   2
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     1
+Mediator                    6
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 360
+Number of files processed: 1285
+Size of DelegationTable: 1972
+Size of concrete class nodes: 272
+Size of undirected invocation edges: 28
+
+
+nMediatorFacadeDual/nMediator = 1/6
+nImmutable/nFlyweight = 0/2
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+
+--------- Original GoF Patterns ----------
+
+Chain of Responsibility Pattern
+TestFailedException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+detail of type Throwable propogates the request
+File Location: Project/loom/test/jdk/java/rmi/testlibrary/TestFailedException.java
+
+Chain of Responsibility Pattern
+TestFailedException is a Chain of Responsibility Handler class
+printStackTrace is a handle operation
+detail of type Throwable propogates the request
+File Location: Project/loom/test/jdk/java/rmi/testlibrary/TestFailedException.java
+
+Decorator Pattern
+NotExtending is a Decorator class
+equals is a decorate operation
+stub of type Remote is the Decoratee class
+File Location: Project/loom/test/jdk/java/rmi/server/RemoteObject/notExtending/NotExtending.java
+
+Decorator Pattern
+XorOutputStream is a Decorator class
+write is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+ Throwable
+ Remote OutputStream
+Strategy Pattern.
+Client is the Context class.
+Hello is the Strategy interface.
+Concrete Strategy classes:  Server
+Delegation through stub of type Hello
+File Location: Project/loom/test/jdk/java/rmi/module/src/mclient/clientpkg/Client.java,
+               Project/loom/test/jdk/java/rmi/module/src/mserver/serverpkg/Hello.java
+
+Strategy Pattern.
+BenchInfo is the Context class.
+Benchmark is the Strategy interface.
+Concrete Strategy classes:  ExceptionCalls ShortArrayCalls ByteArrayCalls DoubleCalls SmallObjTreeCalls FloatArrayCalls BooleanCalls FloatCalls DoubleArrayCalls IntArrayCalls ObjTreeCalls NullCalls ObjArrayCalls ProxyArrayCalls BooleanArrayCalls LongCalls CharCalls ExportObjs ShortCalls CharArrayCalls LongArrayCalls RemoteObjArrayCalls ByteCalls ClassLoading IntCalls CharArrays DoubleArrays Cons Shorts IntArrays BooleanArrays Floats Ints ClassDesc LongArrays FloatArrays Doubles ProxyClassDesc ObjTrees ObjArrays Bytes RepeatObjs CustomDefaultObjTrees CustomObjTrees Chars Longs SmallObjTrees ShortArrays ProxyArrays Booleans ExternObjTrees ReplaceTrees Strings ByteArrays GetPutFieldTrees
+Delegation through benchmark of type Benchmark
+File Location: Project/loom/test/jdk/java/rmi/reliability/benchmark/bench/BenchInfo.java,
+               Project/loom/test/jdk/java/rmi/reliability/benchmark/bench/Benchmark.java
+
+Flyweight Pattern.
+RuntimeThreadInheritanceLeak_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/transport/runtimeThreadInheritanceLeak/RuntimeThreadInheritanceLeak_Stub.java
+
+Flyweight Pattern.
+ReferenceRegistryStub is immutable.
+File location: Project/loom/test/jdk/java/rmi/registry/interfaceHash/ReferenceRegistryStub.java
+
+Flyweight Pattern.
+DGCImplInsulation_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/dgc/dgcImplInsulation/DGCImplInsulation_Stub.java
+
+Flyweight Pattern.
+LegalRegistryNames_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/Naming/legalRegistryNames/LegalRegistryNames_Stub.java
+
+Flyweight Pattern.
+UnderscoreHost_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/Naming/UnderscoreHost_Stub.java
+
+Flyweight Pattern.
+FiniteGCLatency_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/Unreferenced/finiteGCLatency/FiniteGCLatency_Stub.java
+
+Flyweight Pattern.
+UnreferencedContext_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/Unreferenced/unreferencedContext/UnreferencedContext_Stub.java
+
+Flyweight Pattern.
+LeaseCheckInterval is a flyweight factory.
+BINDING is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/java/rmi/server/Unreferenced/leaseCheckInterval/LeaseCheckInterval.java
+
+Flyweight Pattern.
+LeaseCheckInterval_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/Unreferenced/leaseCheckInterval/LeaseCheckInterval_Stub.java
+
+Flyweight Pattern.
+MarshalledObjectGet_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/Unreferenced/marshalledObjectGet/MarshalledObjectGet_Stub.java
+
+Flyweight Pattern.
+TestImpl is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/RemoteObject/verifyRemoteEquals/VerifyRemoteEquals.java
+
+Flyweight Pattern.
+TestHomeImpl is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/RemoteObject/verifyRemoteEquals/VerifyRemoteEquals.java
+
+Flyweight Pattern.
+ServerSocketAndFactory is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/RemoteObject/verifyRemoteEquals/VerifyRemoteEquals.java
+
+Flyweight Pattern.
+ClientSocketAndFactory is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/RemoteObject/verifyRemoteEquals/VerifyRemoteEquals.java
+
+Flyweight Pattern.
+KeepAliveDuringCall is a flyweight factory.
+BINDING is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/java/rmi/server/UnicastRemoteObject/keepAliveDuringCall/KeepAliveDuringCall.java
+
+Flyweight Pattern.
+Impl1_Stub is immutable.
+File location: Project/loom/test/jdk/java/rmi/server/serverStackTrace/Impl1_Stub.java
+
+Flyweight Pattern.
+CompressConstants is a flyweight factory.
+codeTable is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/registry/Compress.java
+
+Flyweight Pattern.
+CompressConstants is a flyweight factory.
+codeTable is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/CompressConstants.java
+
+Flyweight Pattern.
+TestUtil is a flyweight factory.
+UNRESOLVABLE_HOST is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/java/nio/channels/TestUtil.java
+
+Factory Method pattern.
+RMIServerSocketFactory is a Factory Method class.
+SSF is a concrete Factory Method class.
+createServerSocket is a factory method returns  SS
+ which extends ServerSocket
+File Location: Project/loom/test/jdk/java/rmi/transport/closeServerSocket/CloseServerSocket.java
+
+Factory Method pattern.
+Apple is a Factory Method class.
+AppleImpl is a concrete Factory Method class.
+newOrange is a factory method returns  OrangeImpl
+ which extends Orange
+File Location: Project/loom/test/jdk/java/rmi/reliability/juicer/AppleImpl.java
+
+Factory Method pattern.
+UnicastServerRef is a Factory Method class.
+CustomServerRef is a concrete Factory Method class.
+getClientRef is a factory method returns  CustomRef
+ which extends RemoteRef
+File Location: Project/loom/test/jdk/java/rmi/server/useCustomRef/UseCustomRef.java
+
+Factory Method pattern.
+RMIServerSocketFactory is a Factory Method class.
+ServerSocketAndFactory is a concrete Factory Method class.
+createServerSocket is a factory method returns  ServerSocketAndFactory
+ which extends ServerSocket
+File Location: Project/loom/test/jdk/java/rmi/server/RemoteObject/verifyRemoteEquals/VerifyRemoteEquals.java
+
+Factory Method pattern.
+RMIClientSocketFactory is a Factory Method class.
+ClientSocketAndFactory is a concrete Factory Method class.
+createSocket is a factory method returns  ClientSocketAndFactory
+ which extends Socket
+File Location: Project/loom/test/jdk/java/rmi/server/RemoteObject/verifyRemoteEquals/VerifyRemoteEquals.java
+
+Factory Method pattern.
+RMIClientSocketFactory is a Factory Method class.
+CompressRMIClientSocketFactory is a concrete Factory Method class.
+createSocket is a factory method returns  CompressSocket
+ which extends Socket
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/registry/Compress.java
+
+Factory Method pattern.
+RMIServerSocketFactory is a Factory Method class.
+CompressRMIServerSocketFactory is a concrete Factory Method class.
+createServerSocket is a factory method returns  CompressServerSocket
+ which extends ServerSocket
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/registry/Compress.java
+
+Factory Method pattern.
+Socket is a Factory Method class.
+CompressSocket is a concrete Factory Method class.
+getInputStream is a factory method returns  CompressInputStream
+ which extends InputStream
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/registry/Compress.java
+
+Factory Method pattern.
+Socket is a Factory Method class.
+CompressSocket is a concrete Factory Method class.
+getOutputStream is a factory method returns  CompressOutputStream
+ which extends OutputStream
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/registry/Compress.java
+
+Factory Method pattern.
+ServerSocket is a Factory Method class.
+CompressServerSocket is a concrete Factory Method class.
+accept is a factory method returns  CompressSocket
+ which extends Socket
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/registry/Compress.java
+
+Factory Method pattern.
+RMIServerSocketFactory is a Factory Method class.
+ServerFactory is a concrete Factory Method class.
+createServerSocket is a factory method returns  CompressServerSocket XorServerSocket
+ which extends ServerSocket
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+Factory Method pattern.
+RMIClientSocketFactory is a Factory Method class.
+ClientFactory is a concrete Factory Method class.
+createSocket is a factory method returns  CompressSocket XorSocket
+ which extends Socket
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+Factory Method pattern.
+Socket is a Factory Method class.
+CompressSocket is a concrete Factory Method class.
+getInputStream is a factory method returns  CompressInputStream
+ which extends InputStream
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+Factory Method pattern.
+Socket is a Factory Method class.
+CompressSocket is a concrete Factory Method class.
+getOutputStream is a factory method returns  CompressOutputStream
+ which extends OutputStream
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+Factory Method pattern.
+ServerSocket is a Factory Method class.
+CompressServerSocket is a concrete Factory Method class.
+accept is a factory method returns  CompressSocket
+ which extends Socket
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+Factory Method pattern.
+Socket is a Factory Method class.
+XorSocket is a concrete Factory Method class.
+getInputStream is a factory method returns  XorInputStream
+ which extends InputStream
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+Factory Method pattern.
+Socket is a Factory Method class.
+XorSocket is a concrete Factory Method class.
+getOutputStream is a factory method returns  XorOutputStream
+ which extends OutputStream
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+Factory Method pattern.
+ServerSocket is a Factory Method class.
+XorServerSocket is a concrete Factory Method class.
+accept is a factory method returns  XorSocket
+ which extends Socket
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/unicast/MultiSocketFactory.java
+
+Factory Method pattern.
+CheckUnmarshal is a Factory Method class.
+CheckUnmarshalOnStopThread is a concrete Factory Method class.
+ping is a factory method returns  Integer
+ which extends Object
+File Location: Project/loom/test/jdk/java/rmi/server/Unmarshal/checkUnmarshalOnStopThread/CheckUnmarshalOnStopThread.java
+
+Mediator Pattern.
+Mediator: CheckFQDN
+Colleagues:  CheckFQDNClient TestLibrary
+FileLocation: Project/loom/test/jdk/java/rmi/transport/checkFQDN/CheckFQDN.java
+
+Mediator Pattern.
+Mediator: OrangeImpl
+Colleagues:  OrangeEchoImpl OrangeEcho
+FileLocation: Project/loom/test/jdk/java/rmi/reliability/juicer/OrangeImpl.java
+
+Mediator Pattern.
+Mediator: OrangeEchoImpl
+Colleagues:  OrangeImpl Orange
+FileLocation: Project/loom/test/jdk/java/rmi/reliability/juicer/OrangeEchoImpl.java
+
+Mediator Pattern.
+Mediator: TextReporter
+Colleagues:  Harness Util
+FileLocation: Project/loom/test/jdk/java/rmi/reliability/benchmark/bench/TextReporter.java
+
+Mediator Pattern.
+Mediator: BenchInfo
+Colleagues:  Harness Benchmark CharArrays DoubleArrays Cons Shorts IntArrays BooleanArrays Floats Ints ClassDesc LongArrays FloatArrays Doubles ProxyClassDesc ObjTrees ObjArrays Bytes RepeatObjs CustomDefaultObjTrees CustomObjTrees Chars Longs SmallObjTrees ShortArrays ProxyArrays Booleans ExternObjTrees ReplaceTrees Strings ByteArrays GetPutFieldTrees
+FileLocation: Project/loom/test/jdk/java/rmi/reliability/benchmark/bench/BenchInfo.java
+
+Mediator Pattern.
+Mediator: HtmlReporter
+Colleagues:  Harness Util
+FileLocation: Project/loom/test/jdk/java/rmi/reliability/benchmark/bench/HtmlReporter.java
+
+Mediator Pattern.
+Mediator: StreamBufferOutputStream
+Colleagues:  CompressOutputStream CompressOutputStream StreamBuffer XorOutputStream
+FileLocation: Project/loom/test/jdk/java/rmi/reliability/benchmark/bench/serial/StreamBuffer.java
+
+Mediator Pattern.
+Mediator: UseCustomSocketFactory
+Colleagues:  HelloImpl TestObj AppleEvent
+FileLocation: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/registry/UseCustomSocketFactory.java
+
+Mediator Pattern.
+Mediator: KeySets$5
+Colleagues:  Catch Adder
+FileLocation: Project/loom/test/jdk/java/nio/channels/Selector/KeySets.java
+
+Mediator Pattern.
+Mediator: KeySets$6
+Colleagues:  Catch Adder
+FileLocation: Project/loom/test/jdk/java/nio/channels/Selector/KeySets.java
+
+Mediator Pattern.
+Mediator: KeySets$7
+Colleagues:  Catch Adder
+FileLocation: Project/loom/test/jdk/java/nio/channels/Selector/KeySets.java
+
+Mediator Pattern.
+Mediator: KeySets$8
+Colleagues:  Catch Adder
+FileLocation: Project/loom/test/jdk/java/nio/channels/Selector/KeySets.java
+
+Mediator Pattern.
+Mediator: KeySets$9
+Colleagues:  Catch Adder
+FileLocation: Project/loom/test/jdk/java/nio/channels/Selector/KeySets.java
+
+Proxy Pattern.
+ShutdownImpl is a proxy.
+Remote is a proxy interface.
+The real object(s): ShutdownMonitor
+File Location: Project/loom/test/jdk/java/rmi/server/UnicastRemoteObject/keepAliveDuringCall/ShutdownImpl.java
+
+Facade Pattern.
+CheckFQDN is a facade class.
+Hidden types: TestLibrary JavaVM
+Facade access types: CheckFQDN
+File Location: Project/loom/test/jdk/java/rmi/transport/checkFQDN/CheckFQDN.java
+
+Facade Pattern.
+CheckLeaseLeak is a facade class.
+Hidden types: TestLibrary JavaVM
+Facade access types: CheckLeaseLeak
+File Location: Project/loom/test/jdk/java/rmi/transport/checkLeaseInfoLeak/CheckLeaseLeak.java
+
+Facade Pattern.
+TextReporter is a facade class.
+Hidden types: BenchInfo Util
+Facade access types: TextReporter
+File Location: Project/loom/test/jdk/java/rmi/reliability/benchmark/bench/TextReporter.java
+
+Facade Pattern.
+Harness is a facade class.
+Hidden types: BenchInfo Reporter
+Facade access types: Harness
+File Location: Project/loom/test/jdk/java/rmi/reliability/benchmark/bench/Harness.java
+
+Facade Pattern.
+ClientStackTrace is a facade class.
+Hidden types: TestLibrary MyRemoteInterface
+Facade access types: ClientStackTrace
+File Location: Project/loom/test/jdk/java/rmi/server/clientStackTrace/ClientStackTrace.java
+
+Facade Pattern.
+UseCustomSocketFactory is a facade class.
+Hidden types: HelloImpl JavaVM
+Facade access types: HelloImpl
+File Location: Project/loom/test/jdk/java/rmi/server/RMISocketFactory/useSocketFactory/registry/UseCustomSocketFactory.java
+
+Facade Pattern.
+LoadProxyClasses is a facade class.
+Hidden types: TestLibrary FnnUnmarshal
+Facade access types: LoadProxyClasses
+File Location: Project/loom/test/jdk/java/rmi/server/RMIClassLoader/loadProxyClasses/LoadProxyClasses.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            7
+Factory Method              7
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   2
+Facade                      7
+Flyweight                  19
+Proxy                       1
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     1
+Mediator                   13
+Observer                    0
+State                       0
+Strategy                    2
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 531
+Number of files processed: 1227
+Size of DelegationTable: 3541
+Size of concrete class nodes: 415
+Size of undirected invocation edges: 129
+
+
+nMediatorFacadeDual/nMediator = 3/13
+nImmutable/nFlyweight = 14/19
+nFlyweightGoFVersion = 0
+pinot: ast.h:6700: void AstModifiers::AllocateModifiers(unsigned int): Assertion `! modifiers && estimate' failed.
+find: ‘./pinot’ terminated by signal 6
+pinot: ast.h:6700: void AstModifiers::AllocateModifiers(unsigned int): Assertion `! modifiers && estimate' failed.
+find: ‘./pinot’ terminated by signal 6
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+TestedInterface is a flyweight factory.
+s is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/java/lang/Class/getMethods/NonPublicStaticInitializer.java
+
+Flyweight Pattern.
+TestSecurityManager is immutable.
+File location: Project/loom/test/jdk/java/beans/XMLEncoder/4741757/TestSecurityManager.java
+
+Flyweight Pattern.
+TestFieldAccess is immutable.
+File location: Project/loom/test/jdk/java/beans/XMLEncoder/4741757/TestFieldAccess.java
+
+Flyweight Pattern.
+TestStackOverflow is immutable.
+File location: Project/loom/test/jdk/java/beans/XMLEncoder/4741757/TestStackOverflow.java
+
+Composite pattern.
+Bug4404588 is the composite class.
+charData is the composite instance.
+Object is the component class.
+File Location: Project/loom/test/jdk/java/lang/Character/Bug4404588.java
+File Location: rt.jar/java/lang(Object.class)
+
+Template Method Found.
+AbstractTest is the template class
+toString is the template method
+getValue is a primitive method
+File Location: Project/loom/test/jdk/java/beans/XMLEncoder/4741757/AbstractTest.java
+
+Mediator Pattern.
+Mediator: MyURLClassLoader
+Colleagues:  GetURLsTest MyURLClassLoader
+FileLocation: Project/loom/test/jdk/java/net/URLClassLoader/GetURLsTest.java
+
+Mediator Pattern.
+Mediator: MyURLClassLoader
+Colleagues:  MyURLClassLoader
+FileLocation: Project/loom/test/jdk/java/net/URLClassLoader/AddURLTest.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   1
+Decorator                   0
+Facade                      0
+Flyweight                   4
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    2
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             1
+Visitor                     0
+------------------------------
+
+Number of classes processed: 250
+Number of files processed: 1285
+Size of DelegationTable: 1165
+Size of concrete class nodes: 215
+Size of undirected invocation edges: 5
+
+
+nMediatorFacadeDual/nMediator = 0/2
+nImmutable/nFlyweight = 3/4
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+TestDialog is immutable.
+File location: Project/loom/test/jdk/java/awt/regtesthelpers/Sysout.java
+
+Template Method Found.
+AbstractTest is the template class
+test is the template method
+validate is a primitive method
+File Location: Project/loom/test/jdk/java/beans/XMLDecoder/spec/AbstractTest.java
+
+Observer Pattern.
+Flag is an observer iterator.
+Object is the generic type for the listeners.
+waitForFlagTriggered is the notify method.
+wait is the update method.
+Subject class(es): Flag
+File Location: Project/loom/test/jdk/java/awt/Modal/helpers/Flag.java
+
+Mediator Pattern.
+Mediator: Sysout
+Colleagues:  AbstractTest TestDialog
+FileLocation: Project/loom/test/jdk/java/awt/regtesthelpers/Sysout.java
+
+Proxy Pattern.
+TestDialog is a proxy.
+Dialog is a proxy interface.
+The real object(s): TextArea
+File Location: Project/loom/test/jdk/java/awt/regtesthelpers/Sysout.java
+
+Proxy Pattern.
+TestDialog is a proxy.
+Dialog is a proxy interface.
+The real object(s): TextArea
+File Location: Project/loom/test/jdk/java/awt/Component/UpdatingBootTime/UpdatingBootTime.java
+
+Proxy Pattern.
+JTextFieldTest is a proxy.
+Applet is a proxy interface.
+The real object(s): TextField
+File Location: Project/loom/test/jdk/java/awt/im/JTextFieldTest.java
+
+Proxy Pattern.
+QuoteAndBackslashTestFrame is a proxy.
+Frame is a proxy interface.
+The real object(s): PrintCanvas
+File Location: Project/loom/test/jdk/java/awt/PrintJob/QuoteAndBackslashTest/QuoteAndBackslashTest.java
+
+Proxy Pattern.
+SecurityDialogTest is a proxy.
+Frame is a proxy interface.
+The real object(s): Button
+File Location: Project/loom/test/jdk/java/awt/PrintJob/Security/SecurityDialogTest.java
+
+Proxy Pattern.
+ScrollPaneValidateTest is a proxy.
+Frame is a proxy interface.
+The real object(s): ScrollPane
+File Location: Project/loom/test/jdk/java/awt/ScrollPane/ScrollPaneValidateTest.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   1
+Proxy                       6
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    1
+Observer                    1
+State                       0
+Strategy                    0
+Template Method             1
+Visitor                     0
+------------------------------
+
+Number of classes processed: 433
+Number of files processed: 1206
+Size of DelegationTable: 2714
+Size of concrete class nodes: 331
+Size of undirected invocation edges: 88
+
+
+nMediatorFacadeDual/nMediator = 0/1
+nImmutable/nFlyweight = 1/1
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+GlyphRotationTest is a flyweight factory.
+fontName is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/java/awt/FontClass/GlyphRotationTest.java
+
+Flyweight Pattern.
+TestTransferable is a flyweight factory.
+data is a flyweight object.
+getTransferData is the getFlyweight method.
+File location: Project/loom/test/jdk/java/awt/dnd/NoFormatsDragEnterTest/NoFormatsDragEnterTest.java
+
+Factory Method pattern.
+Pageable is a Factory Method class.
+PageableHandler is a concrete Factory Method class.
+getPrintable is a factory method returns  PrintDlgPageable
+ which extends Printable
+File Location: Project/loom/test/jdk/java/awt/print/Dialog/PrintDlgPageable.java
+
+Factory Method pattern.
+Doc is a Factory Method class.
+ByteDoc is a concrete Factory Method class.
+getStreamForBytes is a factory method returns  ByteArrayInputStream
+ which extends InputStream
+File Location: Project/loom/test/jdk/java/awt/print/PrinterJob/MultiThread/MultiThreadTest.java
+
+Factory Method pattern.
+Arc2D is a Factory Method class.
+Arc is a concrete Factory Method class.
+makeBounds is a factory method returns  Double
+ which extends Rectangle2D
+File Location: Project/loom/test/jdk/java/awt/geom/Arc2D/SerializationTest.java
+
+Factory Method pattern.
+Val is a Factory Method class.
+FloatVal is a concrete Factory Method class.
+save is a factory method returns  Float
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+Val is a Factory Method class.
+DoubleVal is a concrete Factory Method class.
+save is a factory method returns  Double
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+Val is a Factory Method class.
+IntRangeVal is a concrete Factory Method class.
+save is a factory method returns  Integer
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+ShapeTester is a Factory Method class.
+FloatRectangleTester is a concrete Factory Method class.
+makeShape is a factory method returns  Float
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+ShapeTester is a Factory Method class.
+DoubleRectangleTester is a concrete Factory Method class.
+makeShape is a factory method returns  Double
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+ShapeTester is a Factory Method class.
+FloatEllipseTester is a concrete Factory Method class.
+makeShape is a factory method returns  Float
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+ShapeTester is a Factory Method class.
+DoubleEllipseTester is a concrete Factory Method class.
+makeShape is a factory method returns  Double
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+ShapeTester is a Factory Method class.
+FloatArcTester is a concrete Factory Method class.
+makeShape is a factory method returns  Float
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+ShapeTester is a Factory Method class.
+DoubleArcTester is a concrete Factory Method class.
+makeShape is a factory method returns  Double
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+ShapeTester is a Factory Method class.
+FloatRoundRectTester is a concrete Factory Method class.
+makeShape is a factory method returns  Float
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Factory Method pattern.
+ShapeTester is a Factory Method class.
+DoubleRoundRectTester is a concrete Factory Method class.
+makeShape is a factory method returns  Double
+ which extends Object
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Observer Pattern.
+ShapeTester is an observer iterator.
+Val is the generic type for the listeners.
+test is the notify method.
+randomize is the update method.
+Subject class(es): EqualsHashcode
+File Location: Project/loom/test/jdk/java/awt/geom/EqualsHashcode.java
+
+Mediator Pattern.
+Mediator: TestDialogTypeAhead$4$1
+Colleagues:  NPETests TestDialogTypeAhead
+FileLocation: Project/loom/test/jdk/java/awt/KeyboardFocusmanager/TypeAhead/TestDialogTypeAhead.java
+
+Mediator Pattern.
+Mediator: MyEventQueue
+Colleagues:  StoppingEdtOnPushPopTest MyEventQueue1
+FileLocation: Project/loom/test/jdk/java/awt/EventDispatchThread/StoppingEdtOnPushPopTest.java
+
+Mediator Pattern.
+Mediator: StoppingEdtOnPushPopTest
+Colleagues:  NPETests MyEventQueue
+FileLocation: Project/loom/test/jdk/java/awt/EventDispatchThread/StoppingEdtOnPushPopTest.java
+
+Mediator Pattern.
+Mediator: MyEventQueue2
+Colleagues:  MyEventQueue MyEventQueue1
+FileLocation: Project/loom/test/jdk/java/awt/EventQueue/PushPopDeadlock2/PushPopTest.java
+
+Mediator Pattern.
+Mediator: MyEventQueue1
+Colleagues:  MyEventQueue
+FileLocation: Project/loom/test/jdk/java/awt/EventQueue/PushPopDeadlock2/PushPopTest.java
+
+Proxy Pattern.
+TestDialog is a proxy.
+Dialog is a proxy interface.
+The real object(s): TextArea
+File Location: Project/loom/test/jdk/java/awt/datatransfer/DataFlavor/MacOsXFileAndMultipleFileCopingTest/MacOsXFileAndMultipleFileCopingTest.java
+
+Proxy Pattern.
+DestinationTest is a proxy.
+Frame is a proxy interface.
+The real object(s): DisplayImages
+File Location: Project/loom/test/jdk/java/awt/print/Dialog/DestinationTest.java
+
+Proxy Pattern.
+ChoiceFreezeBug is a proxy.
+Panel is a proxy interface.
+The real object(s): Button
+File Location: Project/loom/test/jdk/java/awt/Choice/ChoiceFreezeTest.java
+
+Proxy Pattern.
+InsetsClass is a proxy.
+JFrame is a proxy interface.
+The real object(s): JPanel
+File Location: Project/loom/test/jdk/java/awt/Layout/InsetsTest.java
+
+Proxy Pattern.
+TargetFrame is a proxy.
+Frame is a proxy interface.
+The real object(s): TextArea
+File Location: Project/loom/test/jdk/java/awt/dnd/SkipDropCompleteTest/TargetFrame.java
+
+Proxy Pattern.
+LineClipTest is a proxy.
+Component is a proxy interface.
+The real object(s): Frame
+File Location: Project/loom/test/jdk/java/awt/Graphics/LineClipTest.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            5
+Factory Method              5
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   2
+Proxy                       6
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    5
+Observer                    1
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 466
+Number of files processed: 1216
+Size of DelegationTable: 4483
+Size of concrete class nodes: 371
+Size of undirected invocation edges: 25
+
+
+nMediatorFacadeDual/nMediator = 0/5
+nImmutable/nFlyweight = 0/2
+nFlyweightGoFVersion = 0
+find: ‘./pinot’ terminated by signal 11
+find: ‘./pinot’ terminated by signal 11
+find: ‘./pinot’ terminated by signal 11
+
+--------- Original GoF Patterns ----------
+
+Chain of Responsibility Pattern
+BrokenUIDefaults is a Chain of Responsibility Handler class
+get is a handle operation
+defaults of type UIDefaults propogates the request
+File Location: Project/loom/test/jdk/javax/swing/MultiUIDefaults/4331767/bug4331767.java
+
+Chain of Responsibility Pattern
+BrokenUIDefaults is a Chain of Responsibility Handler class
+get is a handle operation
+defaults of type UIDefaults propogates the request
+File Location: Project/loom/test/jdk/javax/swing/MultiUIDefaults/4331767/bug4331767.java
+
+ UIDefaults
+
+Flyweight Pattern.
+bug6938813 is a flyweight factory.
+DTD_KEY is a flyweight object (declared public-static-final).
+File location: Project/loom/test/jdk/javax/swing/Security/6938813/bug6938813.java
+
+Composite pattern.
+StubBranchElement is the composite class.
+children is the composite instance.
+Element is the component class.
+File Location: Project/loom/test/jdk/javax/swing/text/WrappedPlainView/6857057/StubBranchElement.java
+File Location: rt.jar/javax/swing/text(Element.class)
+
+Factory Method pattern.
+Element is a Factory Method class.
+StubLeafElement is a concrete Factory Method class.
+getAttributes is a factory method returns  SimpleAttributeSet
+ which extends AttributeSet
+File Location: Project/loom/test/jdk/javax/swing/text/WrappedPlainView/6857057/StubLeafElement.java
+
+Factory Method pattern.
+Element is a Factory Method class.
+StubBranchElement is a concrete Factory Method class.
+getAttributes is a factory method returns  SimpleAttributeSet
+ which extends AttributeSet
+File Location: Project/loom/test/jdk/javax/swing/text/WrappedPlainView/6857057/StubBranchElement.java
+
+Factory Method pattern.
+Doc is a Factory Method class.
+URLDoc is a concrete Factory Method class.
+getAttributes is a factory method returns  HashDocAttributeSet
+ which extends DocAttributeSet
+File Location: Project/loom/test/jdk/javax/print/attribute/autosense/PrintAutoSenseData.java
+
+Factory Method pattern.
+PrintService is a Factory Method class.
+TestPrintService is a concrete Factory Method class.
+getAttributes is a factory method returns  HashPrintServiceAttributeSet
+ which extends PrintServiceAttributeSet
+File Location: Project/loom/test/jdk/javax/print/attribute/ServiceDialogTest.java
+
+Mediator Pattern.
+Mediator: VirtualFile
+Colleagues:  VirtualFileSystemView TestPrintService
+FileLocation: Project/loom/test/jdk/javax/swing/JFileChooser/6698013/bug6698013.java
+
+Proxy Pattern.
+bug5012888 is a proxy.
+JFrame is a proxy interface.
+The real object(s): JSpinner
+File Location: Project/loom/test/jdk/javax/swing/JSpinner/5012888/bug5012888.java
+
+Proxy Pattern.
+DefaultPanel is a proxy.
+JPanel is a proxy interface.
+The real object(s): JComboBox
+File Location: Project/loom/test/jdk/javax/swing/JComboBox/4515752/DefaultButtonTest.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            2
+Factory Method              3
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   1
+Decorator                   0
+Facade                      0
+Flyweight                   1
+Proxy                       2
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     1
+Mediator                    1
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 313
+Number of files processed: 1256
+Size of DelegationTable: 2623
+Size of concrete class nodes: 254
+Size of undirected invocation edges: 60
+
+
+nMediatorFacadeDual/nMediator = 0/1
+nImmutable/nFlyweight = 0/1
+nFlyweightGoFVersion = 0
+find: ‘./pinot’ terminated by signal 11
+
+--------- Original GoF Patterns ----------
+
+
+
+Composite pattern.
+TableRowAdder is the composite class.
+data is the composite instance.
+Object is the component class.
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/TableRowTest.java
+File Location: rt.jar/java/lang(Object.class)
+
+Composite pattern.
+TableRowTest is the composite class.
+data is the composite instance.
+Object is the component class.
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/TableRowTest.java
+File Location: rt.jar/java/lang(Object.class)
+
+Factory Method pattern.
+AbstractSwingTest is a Factory Method class.
+TypingTest is a concrete Factory Method class.
+getTestComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/TypingTest.java
+
+Factory Method pattern.
+AbstractSwingTest is a Factory Method class.
+TableRowTest is a concrete Factory Method class.
+getTestComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/TableRowTest.java
+
+Factory Method pattern.
+AbstractSwingTest is a Factory Method class.
+TextAreaTest is a concrete Factory Method class.
+getTestComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/TextAreaTest.java
+
+Factory Method pattern.
+AbstractSwingTest is a Factory Method class.
+SliderTest is a concrete Factory Method class.
+getTestComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/SliderTest.java
+
+Factory Method pattern.
+AbstractSwingTest is a Factory Method class.
+LabelTest is a concrete Factory Method class.
+getTestComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/LabelTest.java
+
+Factory Method pattern.
+AbstractSwingTest is a Factory Method class.
+ListTest is a concrete Factory Method class.
+getTestComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/ListTest.java
+
+Factory Method pattern.
+AbstractSwingTest is a Factory Method class.
+TextPaneTest is a concrete Factory Method class.
+getTestComponent is a factory method returns  JPanel
+ which extends JComponent
+File Location: Project/loom/test/jdk/performance/client/SwingMark/src/TextPaneTest.java
+
+Mediator Pattern.
+Mediator: CountTable
+Colleagues:  CountTextArea CountSlider
+FileLocation: Project/loom/test/jdk/performance/client/SwingMark/src/TableRowTest.java
+
+Mediator Pattern.
+Mediator: CountTextArea
+Colleagues:  CountSlider
+FileLocation: Project/loom/test/jdk/performance/client/SwingMark/src/TextAreaTest.java
+
+Mediator Pattern.
+Mediator: CountSlider
+Colleagues:  CountTextArea
+FileLocation: Project/loom/test/jdk/performance/client/SwingMark/src/SliderTest.java
+
+Mediator Pattern.
+Mediator: CounterLabel
+Colleagues:  CountTextArea CountSlider
+FileLocation: Project/loom/test/jdk/performance/client/SwingMark/src/LabelTest.java
+
+Mediator Pattern.
+Mediator: CountList
+Colleagues:  CountTextArea CountSlider
+FileLocation: Project/loom/test/jdk/performance/client/SwingMark/src/ListTest.java
+
+Mediator Pattern.
+Mediator: CountTextArea
+Colleagues:  CountTextArea CountSlider
+FileLocation: Project/loom/test/jdk/performance/client/SwingMark/src/TextPaneTest.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              1
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   2
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    6
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 54
+Number of files processed: 295
+Size of DelegationTable: 306
+Size of concrete class nodes: 45
+Size of undirected invocation edges: 8
+
+
+nMediatorFacadeDual/nMediator = 0/6
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0

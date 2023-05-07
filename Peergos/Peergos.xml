@@ -1,0 +1,233 @@
+
+--------- Original GoF Patterns ----------
+
+Singleton Pattern
+NotFoundException is a Singleton class
+INSTANCE is the Singleton instance
+getNotFoundInstance creates and returns INSTANCE
+File location: Project/Peergos/src/peergos/shared/zxing/NotFoundException.java
+
+
+Chain of Responsibility Pattern
+File is a Chain of Responsibility Handler class
+isAbsolute is a handle operation
+parent of type File propogates the request
+File Location: Project/Peergos/src/peergos/gwt/emu/java/io/File.java
+
+Chain of Responsibility Pattern
+File is a Chain of Responsibility Handler class
+mkdirs is a handle operation
+parent of type File propogates the request
+File Location: Project/Peergos/src/peergos/gwt/emu/java/io/File.java
+
+Decorator Pattern
+FileInputStream is a Decorator class
+read is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: Project/Peergos/src/peergos/gwt/emu/java/io/FileInputStream.java
+
+Decorator Pattern
+FileInputStream is a Decorator class
+read is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: Project/Peergos/src/peergos/gwt/emu/java/io/FileInputStream.java
+
+Decorator Pattern
+FileInputStream is a Decorator class
+available is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: Project/Peergos/src/peergos/gwt/emu/java/io/FileInputStream.java
+
+Decorator Pattern
+FileInputStream is a Decorator class
+close is a decorate operation
+in of type InputStream is the Decoratee class
+File Location: Project/Peergos/src/peergos/gwt/emu/java/io/FileInputStream.java
+
+Decorator Pattern
+DeflaterOutputStream is a Decorator class
+flush is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: Project/Peergos/src/peergos/gwt/emu/java/util/zip/DeflaterOutputStream.java
+
+Decorator Pattern
+DeflaterOutputStream is a Decorator class
+close is a decorate operation
+out of type OutputStream is the Decoratee class
+File Location: Project/Peergos/src/peergos/gwt/emu/java/util/zip/DeflaterOutputStream.java
+
+ File
+ InputStream OutputStream
+Flyweight Pattern.
+File is a flyweight factory.
+ROOT is a flyweight object (declared public-static-final).
+File location: Project/Peergos/src/peergos/gwt/emu/java/io/File.java
+
+Flyweight Pattern.
+WriterException is immutable.
+File location: Project/Peergos/src/peergos/shared/zxing/WriterException.java
+
+Flyweight Pattern.
+Charsets is a flyweight factory.
+US_ASCII is a flyweight object (declared public-static-final).
+File location: Project/Peergos/src/peergos/shared/io/ipfs/multibase/Charsets.java
+
+Flyweight Pattern.
+CharEncoding is a flyweight factory.
+ISO_8859_1 is a flyweight object (declared public-static-final).
+File location: Project/Peergos/src/peergos/shared/io/ipfs/multibase/CharEncoding.java
+
+Flyweight Pattern.
+RenderingHints is a flyweight factory.
+KEY_INTERPOLATION is a flyweight object (declared public-static-final).
+File location: Project/Peergos/src/peergos/gwt/emu/java/awt/RenderingHints.java
+
+Flyweight Pattern.
+AlphaComposite is a flyweight factory.
+Src is a flyweight object (declared public-static-final).
+File location: Project/Peergos/src/peergos/gwt/emu/java/awt/AlphaComposite.java
+
+Flyweight Pattern.
+JFXPanel is immutable.
+File location: Project/Peergos/src/peergos/gwt/emu/javafx/embed/swing/JFXPanel.java
+
+Flyweight Pattern.
+WritableImage is immutable.
+File location: Project/Peergos/src/peergos/gwt/emu/javafx/scene/image/WritableImage.java
+
+Flyweight Pattern.
+Media is immutable.
+File location: Project/Peergos/src/peergos/gwt/emu/javafx/scene/media/Media.java
+
+Flyweight Pattern.
+MediaPlayer is immutable.
+File location: Project/Peergos/src/peergos/gwt/emu/javafx/scene/media/MediaPlayer.java
+
+Flyweight Pattern.
+MediaView is immutable.
+File location: Project/Peergos/src/peergos/gwt/emu/javafx/scene/media/MediaView.java
+
+Flyweight Pattern.
+ReedSolomonException is immutable.
+File location: Project/Peergos/src/peergos/shared/zxing/common/reedsolomon/ReedSolomonException.java
+
+Flyweight Pattern.
+ReedSolomonDecoder is immutable.
+File location: Project/Peergos/src/peergos/shared/zxing/common/reedsolomon/ReedSolomonDecoder.java
+
+Flyweight Pattern.
+Constants is a flyweight factory.
+DHT_URL is a flyweight object (declared public-static-final).
+File location: Project/Peergos/src/peergos/shared/util/Constants.java
+
+Flyweight Pattern.
+AlignmentPattern is immutable.
+File location: Project/Peergos/src/peergos/shared/zxing/qrcode/detector/AlignmentPattern.java
+
+Flyweight Pattern.
+FinderPatternInfo is immutable.
+File location: Project/Peergos/src/peergos/shared/zxing/qrcode/detector/FinderPatternInfo.java
+
+Flyweight Pattern.
+QRCodeDecoderMetaData is immutable.
+File location: Project/Peergos/src/peergos/shared/zxing/qrcode/decoder/QRCodeDecoderMetaData.java
+
+Flyweight Pattern.
+BlockPair is immutable.
+File location: Project/Peergos/src/peergos/shared/zxing/qrcode/encoder/BlockPair.java
+
+Flyweight Pattern.
+WhiteRectangleDetector is immutable.
+File location: Project/Peergos/src/peergos/shared/zxing/common/detector/WhiteRectangleDetector.java
+
+Mediator Pattern.
+Mediator: InputStreamReader
+Colleagues:  Reader FileInputStream Utf8Decoder
+FileLocation: Project/Peergos/src/peergos/gwt/emu/java/io/InputStreamReader.java
+
+Mediator Pattern.
+Mediator: DeflaterHuffman
+Colleagues:  DeflaterEngine Tree
+FileLocation: Project/Peergos/src/peergos/gwt/emu/java/util/zip/DeflaterHuffman.java
+
+Adapter Pattern.
+Adapting classes:  Reader Object
+InputStreamReader is an adapter class.
+Utf8Decoder is the adaptee class.
+File Location: Project/Peergos/src/peergos/gwt/emu/java/io/InputStreamReader.java
+File Location: Project/Peergos/src/peergos/gwt/emu/com/badlogic/gdx/utils/Utf8Decoder.java
+
+Adapter Pattern.
+Adapting classes:  Object DeflaterConstants
+DeflaterEngine is an adapter class.
+DeflaterHuffman is the adaptee class.
+File Location: Project/Peergos/src/peergos/gwt/emu/java/util/zip/DeflaterEngine.java
+File Location: Project/Peergos/src/peergos/gwt/emu/java/util/zip/DeflaterHuffman.java
+
+Adapter Pattern.
+Adapting classes:  Object DeflaterConstants
+DeflaterEngine is an adapter class.
+Adler32 is the adaptee class.
+File Location: Project/Peergos/src/peergos/gwt/emu/java/util/zip/DeflaterEngine.java
+File Location: Project/Peergos/src/peergos/gwt/emu/java/util/zip/Adler32.java
+
+Facade Pattern.
+DeflaterEngine is a facade class.
+Hidden types: DeflaterHuffman Adler32 PendingBuffer
+Facade access types: DeflaterEngine
+File Location: Project/Peergos/src/peergos/gwt/emu/java/util/zip/DeflaterEngine.java
+
+Facade Pattern.
+ReedSolomonDecoder is a facade class.
+Hidden types: GenericGFPoly GenericGF
+Facade access types: ReedSolomonDecoder
+File Location: Project/Peergos/src/peergos/shared/zxing/common/reedsolomon/ReedSolomonDecoder.java
+
+Facade Pattern.
+WhiteRectangleDetector is a facade class.
+Hidden types: MathUtils BitMatrix ResultPoint
+Facade access types: WhiteRectangleDetector
+File Location: Project/Peergos/src/peergos/shared/zxing/common/detector/WhiteRectangleDetector.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   1
+------------------------------
+Structural Patterns
+==============================
+Adapter                     3
+Bridge                      0
+Composite                   0
+Decorator                   2
+Facade                      3
+Flyweight                  19
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     1
+Mediator                    2
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 127
+Number of files processed: 754
+Size of DelegationTable: 393
+Size of concrete class nodes: 99
+Size of undirected invocation edges: 24
+
+
+nMediatorFacadeDual/nMediator = 0/2
+nImmutable/nFlyweight = 13/19
+nFlyweightGoFVersion = 0

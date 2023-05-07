@@ -1,0 +1,172 @@
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+JobClusterPayloads is a flyweight factory.
+JOB_CLUSTER_CREATE is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-control-plane/mantis-control-plane-server/src/test/java/io/mantisrx/master/api/akka/payloads/JobClusterPayloads.java
+
+Flyweight Pattern.
+AgentClusterPayloads is a flyweight factory.
+SET_ACTIVE is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-control-plane/mantis-control-plane-server/src/test/java/io/mantisrx/master/api/akka/payloads/AgentClusterPayloads.java
+
+Flyweight Pattern.
+JobDiscoveryHeartbeats is a flyweight factory.
+JOB_CLUSTER_INFO_HB_INSTANCE is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-control-plane/mantis-control-plane-server/src/main/java/io/mantisrx/master/api/akka/route/utils/JobDiscoveryHeartbeats.java
+
+Flyweight Pattern.
+JobPayloads is a flyweight factory.
+RESUBMIT_WORKER is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-control-plane/mantis-control-plane-server/src/test/java/io/mantisrx/master/api/akka/payloads/JobPayloads.java
+
+Flyweight Pattern.
+StringConstants is a flyweight factory.
+MANTIS_MASTER_USER is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-control-plane/mantis-control-plane-server/src/main/java/io/mantisrx/master/StringConstants.java
+
+Flyweight Pattern.
+MetricStringConstants is a flyweight factory.
+METRIC_NAME_STR is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-control-plane/mantis-control-plane-core/src/main/java/io/mantisrx/server/core/stats/MetricStringConstants.java
+
+Flyweight Pattern.
+KafkaSourceParameters is a flyweight factory.
+PREFIX is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-connectors/mantis-connector-kafka/src/main/java/io/mantisrx/connector/kafka/KafkaSourceParameters.java
+
+Flyweight Pattern.
+KafkaSinkJobParameters is a flyweight factory.
+PREFIX is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-connectors/mantis-connector-kafka/src/main/java/io/mantisrx/connector/kafka/sink/KafkaSinkJobParameters.java
+
+Flyweight Pattern.
+SinkProperties is a flyweight factory.
+SINK_CATALOG is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-connectors/mantis-connector-iceberg/src/main/java/io/mantisrx/connector/iceberg/sink/config/SinkProperties.java
+
+Flyweight Pattern.
+SourceJobConstants is a flyweight factory.
+SUBSCRIPTION_ID_PARAM_NAME is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-source-jobs/mantis-source-job-kafka/src/main/java/io/mantisrx/sourcejob/kafka/core/utils/SourceJobConstants.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                  10
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 54
+Number of files processed: 802
+Size of DelegationTable: 1
+Size of concrete class nodes: 36
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/10
+nFlyweightGoFVersion = 0
+
+--------- Original GoF Patterns ----------
+
+
+
+Strategy Pattern.
+DefaultLifecycleFactory is the Context class.
+Lifecycle is the Strategy interface.
+Concrete Strategy classes:  LifecycleNoOp
+Delegation through instance of type Lifecycle
+File Location: Project/mantis/mantis-runtime/src/main/java/io/mantisrx/runtime/DefaultLifecycleFactory.java,
+               Project/mantis/mantis-runtime/src/main/java/io/mantisrx/runtime/lifecycle/Lifecycle.java
+
+Flyweight Pattern.
+WorkerConstants is a flyweight factory.
+WORKER_CONTAINER_DEFINITION_ID is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-common/src/main/java/io/mantisrx/common/WorkerConstants.java
+
+Flyweight Pattern.
+MantisSSEConstants is a flyweight factory.
+MANTIS_ENABLE_COMPRESSION is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-common/src/main/java/com/mantisrx/common/utils/MantisSSEConstants.java
+
+Flyweight Pattern.
+MantisSourceJobConstants is a flyweight factory.
+SUBSCRIPTION_ID_PARAM_NAME is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-common/src/main/java/com/mantisrx/common/utils/MantisSourceJobConstants.java
+
+Flyweight Pattern.
+StreamType is a flyweight factory.
+DEFAULT_EVENT_STREAM is a flyweight object (declared public-static-final).
+File location: Project/mantis/mantis-publish/mantis-publish-core/src/main/java/io/mantisrx/publish/api/StreamType.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   4
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    1
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 35
+Number of files processed: 368
+Size of DelegationTable: 0
+Size of concrete class nodes: 25
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/4
+nFlyweightGoFVersion = 0

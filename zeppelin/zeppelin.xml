@@ -1,0 +1,78 @@
+
+--------- Original GoF Patterns ----------
+
+
+
+Flyweight Pattern.
+ClusterEventListener is a flyweight factory.
+CLUSTER_EVENT is a flyweight object (declared public-static-final).
+File location: Project/zeppelin/zeppelin-interpreter/src/main/java/org/apache/zeppelin/cluster/event/ClusterEventListener.java
+
+Flyweight Pattern.
+SparkStringConstants is a flyweight factory.
+MASTER_PROP_NAME is a flyweight object (declared public-static-final).
+File location: Project/zeppelin/spark/interpreter/src/main/java/org/apache/zeppelin/spark/SparkStringConstants.java
+
+Flyweight Pattern.
+KotlinZeppelinBindings is a flyweight factory.
+Z_SELECT_KOTLIN_SYNTAX is a flyweight object (declared public-static-final).
+File location: Project/zeppelin/spark/interpreter/src/main/java/org/apache/zeppelin/spark/kotlin/KotlinZeppelinBindings.java
+
+Flyweight Pattern.
+SubmarineConstants is a flyweight factory.
+DOCKER_HADOOP_HDFS_HOME is a flyweight object (declared public-static-final).
+File location: Project/zeppelin/submarine/src/main/java/org/apache/zeppelin/submarine/commons/SubmarineConstants.java
+
+Composite pattern.
+Row is the composite class.
+data is the composite instance.
+Object is the component class.
+File Location: Project/zeppelin/zeppelin-interpreter/src/main/java/org/apache/zeppelin/tabledata/Row.java
+File Location: rt.jar/java/lang(Object.class)
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   1
+Decorator                   0
+Facade                      0
+Flyweight                   4
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 47
+Number of files processed: 881
+Size of DelegationTable: 38
+Size of concrete class nodes: 36
+Size of undirected invocation edges: 2
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/4
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.

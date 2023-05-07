@@ -1,0 +1,23 @@
+
+--------- Original GoF Patterns ----------
+
+Chain of Responsibility Pattern
+VisibleBufferedInputStream is a Chain of Responsibility Handler class
+skip is a handle operation
+wrapped of type InputStream propogates the request
+File Location: Project/pgjdbc/pgjdbc/src/main/java/org/postgresql/core/VisibleBufferedInputStream.java
+
+Decorator Pattern
+VisibleBufferedInputStream is a Decorator class
+close is a decorate operation
+wrapped of type InputStream is the Decoratee class
+File Location: Project/pgjdbc/pgjdbc/src/main/java/org/postgresql/core/VisibleBufferedInputStream.java
+
+ InputStream
+ InputStream
+Flyweight Pattern.
+NullErrorHandler is a flyweight factory.
+INSTANCE is a flyweight object (declared public-static-final).
+File location: Project/pgjdbc/pgjdbc/src/main/java/org/postgresql/xml/NullErrorHandler.java
+
+find: ‘./pinot’ terminated by signal 11

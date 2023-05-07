@@ -1,0 +1,115 @@
+
+--------- Original GoF Patterns ----------
+
+Singleton Pattern
+SingletonWithWorkInInitializer is a Singleton class
+INSTANCE is the Singleton instance
+getInstance creates and returns INSTANCE
+File location: Project/pitest/pitest-entry/src/test/java/com/example/staticinitializers/SingletonWithWorkInInitializer.java
+
+
+
+
+Flyweight Pattern.
+CoverageSummary is immutable.
+File location: Project/pitest/pitest-entry/src/main/java/org/pitest/coverage/CoverageSummary.java
+
+Flyweight Pattern.
+SingletonWithWorkInInitializer is a flyweight factory.
+INSTANCE is a flyweight object.
+getInstance is the getFlyweight method.
+File location: Project/pitest/pitest-entry/src/test/java/com/example/staticinitializers/SingletonWithWorkInInitializer.java
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   1
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   2
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 134
+Number of files processed: 1020
+Size of DelegationTable: 76
+Size of concrete class nodes: 91
+Size of undirected invocation edges: 5
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 1/2
+nFlyweightGoFVersion = 0
+
+Found 1 system error:
+
+*** Semantic Error: Type "java.lang.annotation.Annotation" was not found.
+
+--------- Original GoF Patterns ----------
+
+
+
+
+------------------------------------------
+
+Pattern Instance Statistics:
+
+Creational Patterns
+==============================
+Abstract Factory            0
+Factory Method              0
+Singleton                   0
+------------------------------
+Structural Patterns
+==============================
+Adapter                     0
+Bridge                      0
+Composite                   0
+Decorator                   0
+Facade                      0
+Flyweight                   0
+Proxy                       0
+------------------------------
+Behavioral Patterns
+==============================
+Chain of Responsibility     0
+Mediator                    0
+Observer                    0
+State                       0
+Strategy                    0
+Template Method             0
+Visitor                     0
+------------------------------
+
+Number of classes processed: 6
+Number of files processed: 21
+Size of DelegationTable: 4
+Size of concrete class nodes: 6
+Size of undirected invocation edges: 0
+
+
+nMediatorFacadeDual/nMediator = 0/0
+nImmutable/nFlyweight = 0/0
+nFlyweightGoFVersion = 0
